@@ -1,0 +1,33 @@
+/* Color ratio 5.85. */
+
+.nested-links a {
+  color: #3455DB;
+}
+
+/* Social media buttons. Taken from Hugo's Ananke. */
+.facebook,
+.github,
+.linkedin,
+.twitter {
+ fill:#bababa
+}
+.new-window {
+ opacity:0;
+ display:inline-block;
+ vertical-align:top
+}
+.link-transition:hover .new-window {
+ opacity:1
+}
+.facebook:hover {
+ fill:#3b5998
+}
+.github:hover {
+ fill:#6cc644
+}
+.linkedin:hover {
+ fill:#0077b5
+}
+.twitter:hover {
+ fill:#1da1f2
+}
