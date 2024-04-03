@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
     <title>Beep Boop</title>
-    <link href="https://wanshenl.me/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://wanshenl.me"/>
+    <link rel="self" type="application/atom+xml" href="https://wanshenl.me/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://wanshenl.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-11-18T00:00:00+00:00</updated>
     <id>https://wanshenl.me/atom.xml</id>
@@ -10,13 +10,19 @@
         <title>Inaction</title>
         <published>2023-11-18T00:00:00+00:00</published>
         <updated>2023-11-18T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/inaction/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/inaction/"/>
         <id>https://wanshenl.me/blog/inaction/</id>
         
-        <content type="html">&lt;blockquote&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/inaction/">&lt;blockquote&gt;
 &lt;p&gt;Not exalting the gifted prevents quarreling.&lt;br &#x2F;&gt;
 Not collecting treasures prevents stealing.&lt;br &#x2F;&gt;
 Not seeing desirable things prevents confusion of the heart.&lt;&#x2F;p&gt;
@@ -53,13 +59,19 @@ We&#x27;ll see where that leads...&lt;&#x2F;p&gt;
         <title>Incentives</title>
         <published>2022-08-31T00:00:00+00:00</published>
         <updated>2022-08-31T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/incentives/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/incentives/"/>
         <id>https://wanshenl.me/blog/archive/incentives/</id>
         
-        <content type="html">&lt;p&gt;Earlier this semester, I joked that I was now truly a phd student TA (i.e., decorative, good for conceptual questions at best) because I kept forgetting about and showing up late to TA meetings. 
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/incentives/">&lt;p&gt;Earlier this semester, I joked that I was now truly a phd student TA (i.e., decorative, good for conceptual questions at best) because I kept forgetting about and showing up late to TA meetings. 
 Well, it is 6am and I have just spent a couple of hours reviewing a PR for BusTub. 
 I am also still answering Piazza, for whatever reason. 
 I guess some old habits take a while to disappear. &lt;&#x2F;p&gt;
@@ -112,13 +124,19 @@ Forget calculus, maybe what we all need is a course on mechanism design. &lt;&#x
         <title>Today you, tomorrow me</title>
         <published>2022-06-01T00:00:00+00:00</published>
         <updated>2022-06-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/today-you-tomorrow-me/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/today-you-tomorrow-me/"/>
         <id>https://wanshenl.me/blog/archive/today-you-tomorrow-me/</id>
         
-        <content type="html">&lt;p&gt;Yesterday, I went to the grocery store and got prepared food from the hot bar. 
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/today-you-tomorrow-me/">&lt;p&gt;Yesterday, I went to the grocery store and got prepared food from the hot bar. 
 It was a bit awkward at first because of my accent, but I had a brief friendly interaction with the lady there afterwards. 
 I only noticed when I got home that she&#x27;d (probably intentionally in retrospect) given me an extra piece of chicken. &lt;&#x2F;p&gt;
 &lt;p&gt;Sometimes, it&#x27;s the little things that get to you. 
@@ -168,13 +186,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Rollercoaster</title>
         <published>2022-04-30T00:00:00+00:00</published>
         <updated>2022-04-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/rollercoaster/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/rollercoaster/"/>
         <id>https://wanshenl.me/blog/archive/rollercoaster/</id>
         
-        <content type="html">&lt;p&gt;A lot to think about this year.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/rollercoaster/">&lt;p&gt;A lot to think about this year.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;My sleep schedule is suffering again. Mix of early bird neighbors and the return of some anxiety. Have been a little brain fogged over the past month.&lt;&#x2F;li&gt;
 &lt;li&gt;Optimistically, I am now aware of upsides to both outcomes for phd completion. OPT at a lower level is invalidated if you hold a higher level credential, e.g., even if you never used MS OPT, having a PhD means that even if you do a MS in the future, you can&#x27;t take MS OPT. Whereas if you had a MS and didn&#x27;t take OPT, and then you did a second MS in the future, you can take the balance of the unused OPT. So, in a way, all outcomes have their silver linings.&lt;&#x2F;li&gt;
@@ -198,13 +222,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Chapter close</title>
         <published>2021-11-25T00:00:00+00:00</published>
         <updated>2021-11-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/chapter-close/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/chapter-close/"/>
         <id>https://wanshenl.me/blog/archive/chapter-close/</id>
         
-        <content type="html">&lt;p&gt;In high school, a particular admonishment stuck out: don&#x27;t apologize if you don&#x27;t mean it. The apology was genuine, but my actions thereafter did not reflect that, and so they were particularly hurt. I think this was in 2013? And that I have changed since.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/chapter-close/">&lt;p&gt;In high school, a particular admonishment stuck out: don&#x27;t apologize if you don&#x27;t mean it. The apology was genuine, but my actions thereafter did not reflect that, and so they were particularly hurt. I think this was in 2013? And that I have changed since.&lt;&#x2F;p&gt;
 &lt;p&gt;Ironically, I seem to be in this situation in various dimensions now: both in academic tutoring from the kid I&#x27;m helping, and also at a more personal level from whom I had considered a friend.&lt;&#x2F;p&gt;
 &lt;p&gt;Well, for once, I can say that I really tried. Even got a second opinion on whether this would be unreasonable, for a change. I think I have some lasting regrets from others before where I did not try, but I think my conscience is clear for this one.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -219,13 +249,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Auto update</title>
         <published>2021-11-17T00:00:00+00:00</published>
         <updated>2021-11-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/auto-update/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/auto-update/"/>
         <id>https://wanshenl.me/blog/archive/auto-update/</id>
         
-        <content type="html">&lt;p&gt;List of things that I used to trust:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/auto-update/">&lt;p&gt;List of things that I used to trust:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Chrome autoupdate -- thought it was blessed magic when I first saw it, now blocking it on the NUC as long as I can...&lt;&#x2F;li&gt;
 &lt;li&gt;Firefox autoupdate -- used to install Firefox on everything, now Mozilla has gone from best to least-worst, and I&#x27;m casually looking for options to switch away...&lt;&#x2F;li&gt;
@@ -246,13 +282,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Role model</title>
         <published>2021-11-10T00:00:00+00:00</published>
         <updated>2021-11-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/role-model/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/role-model/"/>
         <id>https://wanshenl.me/blog/archive/role-model/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;ve been mulling over this post for the past couple of months, prompted by a comment about A&#x27;s own inspiration in life.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/role-model/">&lt;p&gt;I&#x27;ve been mulling over this post for the past couple of months, prompted by a comment about A&#x27;s own inspiration in life.&lt;&#x2F;p&gt;
 &lt;p&gt;I still don&#x27;t have the phrasing for a proper post yet. Or time! My next two weeks look a little terrible...&lt;&#x2F;p&gt;
 &lt;p&gt;In general, I haven&#x27;t had many role models in life who are older than me, though I&#x27;m lucky to have any at all. I&#x27;m lucky to have had great parents -- that&#x27;s two. There&#x27;s Ms. S. And that was probably it, insofar that I truly wanted to be like them. But the generational gap made me feel like I could never quite follow the same life trajectory, and of course there are always aspects where one might have different views or interests. Still, there are many takeaways: to really love your S&#x2F;O even into difficult circumstances, to genuinely listen, to keep learning, to avoid substance abuse, to care for your charges... in aggregate, there&#x27;s a lot to learn from there, and I&#x27;m still trying.&lt;&#x2F;p&gt;
 &lt;p&gt;What makes me genuinely happy is that I think I&#x27;m starting to look up to A as a role model as well. Thrice this week and many more times over the past month and the past few years; there have just been many expressions of consideration for other people that I find both inspiring and calming. It is so nice to be able to have faith in the character of the people you work with. Adds meaning and color to the otherwise humdrum nature of life, and shushes my cynical and acerbic inner thoughts for a while.&lt;&#x2F;p&gt;
@@ -265,13 +307,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Ah Pang</title>
         <published>2021-09-25T00:00:00+00:00</published>
         <updated>2021-09-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/ah-pang/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/ah-pang/"/>
         <id>https://wanshenl.me/blog/archive/ah-pang/</id>
         
-        <content type="html">&lt;p&gt;Seven years together.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/ah-pang/">&lt;p&gt;Seven years together.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;wanshenl.me&#x2F;blog&#x2F;archive&#x2F;ah-pang&#x2F;.&#x2F;pang-nose.jpg&quot; alt=&quot;Ah Pang being nosy&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;I&#x27;ve been lucky enough to have &amp;quot;had&amp;quot; many dogs, but I&#x27;ve never met a dog that understood people so well before.&lt;&#x2F;p&gt;
 &lt;p&gt;Ah Pang was absurdly considerate. Locked outside the gate? He&#x27;ll just quietly sit there, even in the rain -- our other dogs would bark for the gate instead. Does he want to jump on you? Absolutely, but he won&#x27;t do it unless you&#x27;re ok with it. Loves your attention, but won&#x27;t demand it. Always quietly somewhere nearby, never straying too far from home.&lt;&#x2F;p&gt;
@@ -286,13 +334,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Maudlin</title>
         <published>2021-05-14T00:00:00+00:00</published>
         <updated>2021-05-14T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/maudlin/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/maudlin/"/>
         <id>https://wanshenl.me/blog/archive/maudlin/</id>
         
-        <content type="html">&lt;p&gt;Catching myself randomly smiling over the past week.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/maudlin/">&lt;p&gt;Catching myself randomly smiling over the past week.&lt;&#x2F;p&gt;
 &lt;p&gt;I&#x27;ve never been particularly fond of generic well-wishing. But nowadays, I&#x27;m starting to appreciate that it is less about the message itself and more about the consideration behind it.&lt;&#x2F;p&gt;
 &lt;p&gt;Across multiple timezones and across multiple years of being in different countries, to still bother remembering and even syncing up to my local timezone for timing -- that just made me really happy. Genuinely happy, even.&lt;&#x2F;p&gt;
 &lt;p&gt;The regular counterexamples to my otherwise pessimistic and edgy model of social interaction.&lt;&#x2F;p&gt;
@@ -323,13 +377,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>DSR Number 2</title>
         <published>2021-05-07T00:00:00+00:00</published>
         <updated>2021-05-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/dsr-number-two/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/dsr-number-two/"/>
         <id>https://wanshenl.me/blog/archive/dsr-number-two/</id>
         
-        <content type="html">&lt;p&gt;Migrated my blog to Zola, mainly because I felt that there was too much magic going on in Hugo and because I cannot focus at all right now.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/dsr-number-two/">&lt;p&gt;Migrated my blog to Zola, mainly because I felt that there was too much magic going on in Hugo and because I cannot focus at all right now.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Tomorrow (or well, today now) is the deadline for another doctoral student review, so what have I been up to?&lt;&#x2F;p&gt;
 &lt;p&gt;Engineering, per GitHub activity:&lt;&#x2F;p&gt;
@@ -489,13 +549,19 @@ Life was simpler back then. &lt;&#x2F;p&gt;
         <title>Weather</title>
         <published>2021-02-18T00:00:00+00:00</published>
         <updated>2021-02-18T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/weather/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/weather/"/>
         <id>https://wanshenl.me/blog/archive/weather/</id>
         
-        <content type="html">&lt;p&gt;Weather is topical, but weather has been a codeword in my life for some years now.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/weather/">&lt;p&gt;Weather is topical, but weather has been a codeword in my life for some years now.&lt;&#x2F;p&gt;
 &lt;p&gt;It turns out that both are topical.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;A few days ago, autoplay went back to white clouds.&lt;&#x2F;p&gt;
@@ -520,13 +586,19 @@ Cu ttuerni cu mie&lt;&#x2F;p&gt;
         <title>Follow-through</title>
         <published>2021-01-20T00:00:00+00:00</published>
         <updated>2021-01-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/follow-through/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/follow-through/"/>
         <id>https://wanshenl.me/blog/archive/follow-through/</id>
         
-        <content type="html">&lt;p&gt;I went to sleep in an extremely bad mood on Monday, apologizing to someone for not being in the mood to talk.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/follow-through/">&lt;p&gt;I went to sleep in an extremely bad mood on Monday, apologizing to someone for not being in the mood to talk.&lt;&#x2F;p&gt;
 &lt;p&gt;I woke up and their first message asked if I was feeling better. I wasn&#x27;t, actually, until I read that. Then well, maybe I&#x27;m still spending time on something I&#x27;d rather not be spending time on, but that&#x27;s something to be grateful for.&lt;&#x2F;p&gt;
 &lt;p&gt;Saw &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;dinoman_j&#x2F;status&#x2F;1351099875082047489&quot;&gt;this&lt;&#x2F;a&gt; little dinosaur on Twitter afterwards and they came to mind.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -574,13 +646,19 @@ And I think this is not being met.&lt;&#x2F;p&gt;
         <title>Riot</title>
         <published>2021-01-07T00:00:00+00:00</published>
         <updated>2021-01-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/riot/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/riot/"/>
         <id>https://wanshenl.me/blog/archive/riot/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;m a little tired of living in interesting times.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/riot/">&lt;p&gt;I&#x27;m a little tired of living in interesting times.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;I am frustrated that I am not very good at tutoring what appears to be called precalc &#x2F; algebra two in the US. I am also frustrated with Google Jamboard and the fact that students are limited to the clunky mouse writing experience.&lt;&#x2F;p&gt;
 &lt;p&gt;I am even more frustrated, that public education here -- of all countries -- appears to be in a deeply questionable state of affairs. What exactly is the point of teaching formulas and methods if people don&#x27;t understand why they work? I did grow up in similar systems and I think I did well enough in them. But it is 2021, and America is so resource-rich...&lt;&#x2F;p&gt;
@@ -593,13 +671,19 @@ And I think this is not being met.&lt;&#x2F;p&gt;
         <title>Split</title>
         <published>2021-01-02T00:00:00+00:00</published>
         <updated>2021-01-02T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/split/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/split/"/>
         <id>https://wanshenl.me/blog/archive/split/</id>
         
-        <content type="html">&lt;p&gt;I started and finished Never Split the Difference yesterday. Pretty short book, maybe two hours of reading. Author is a little too smug, but the content is reasonable and I suppose being a former FBI hostage negotiator gives them that right.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/split/">&lt;p&gt;I started and finished Never Split the Difference yesterday. Pretty short book, maybe two hours of reading. Author is a little too smug, but the content is reasonable and I suppose being a former FBI hostage negotiator gives them that right.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;In high school, I got very into social engineering and human hacking; I&#x27;m less of a nutcase now. I don&#x27;t think there&#x27;s anything concretely new in this book which previous reading had not covered. But I think the book raised an interesting point that academic theories on negotiation were rooted in rationality, whereas lived experience emphasized people&#x27;s emotional nature. I like the ten dollar experiment that demonstrates the irrationality of fairness.&lt;&#x2F;p&gt;
 &lt;p&gt;I wonder if a similar comparison has been drawn to CBT, the fashionable therapy tool of today.&lt;&#x2F;p&gt;
@@ -621,13 +705,19 @@ And I think this is not being met.&lt;&#x2F;p&gt;
         <title>Space</title>
         <published>2020-12-30T00:00:00+00:00</published>
         <updated>2020-12-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/space/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/space/"/>
         <id>https://wanshenl.me/blog/archive/space/</id>
         
-        <content type="html">&lt;p&gt;Thoughts that have been on my mind for some years, still half-formed.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/space/">&lt;p&gt;Thoughts that have been on my mind for some years, still half-formed.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Something about my personality invites people to engage in free therapy. I don&#x27;t really have a problem with it. If there&#x27;s one thing I can do well, it is probably listening to people and figuring out what they want. Actually, if you ever have to guess what someone wants, just go with support and validation. If you have basic theory of mind, this is easy -- most people just don&#x27;t bother.&lt;&#x2F;p&gt;
 &lt;p&gt;More recently, I&#x27;ve had growing discontent with the (long-held) understanding that I can realistically expect none of the same support to be returned.&lt;&#x2F;p&gt;
@@ -656,13 +746,19 @@ And I think this is not being met.&lt;&#x2F;p&gt;
         <title>Faith</title>
         <published>2020-12-29T00:00:00+00:00</published>
         <updated>2020-12-29T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/faith/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/faith/"/>
         <id>https://wanshenl.me/blog/archive/faith/</id>
         
-        <content type="html">&lt;p&gt;Over the past week, I&#x27;ve been mulling over the thought that Americans have little faith in their government&#x27;s morals, but have faith in their government&#x27;s technical skills. However, back in Brunei and in Singapore, we have faith in the opposite -- the execution can be haphazard, but generally speaking, the government will do (or at least try to do) the right thing. You can see this in our instinctive responses: problem in America and you call the police? Hell no, apparently. But look at the subreddits for Brunei and Singapore respectively -- many appeals to the Sultan or to the MP, and a general faith (bordering on expectation) that their problems will be resolved accordingly.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/faith/">&lt;p&gt;Over the past week, I&#x27;ve been mulling over the thought that Americans have little faith in their government&#x27;s morals, but have faith in their government&#x27;s technical skills. However, back in Brunei and in Singapore, we have faith in the opposite -- the execution can be haphazard, but generally speaking, the government will do (or at least try to do) the right thing. You can see this in our instinctive responses: problem in America and you call the police? Hell no, apparently. But look at the subreddits for Brunei and Singapore respectively -- many appeals to the Sultan or to the MP, and a general faith (bordering on expectation) that their problems will be resolved accordingly.&lt;&#x2F;p&gt;
 &lt;p&gt;This is reminiscent of the vastly different approaches to engineering software that I think I’m facing now. Do you start with a small but correct core, building outwards, or do you build in all manner of hacks, and later solidify inwards? The former is greatly preferable to me, but most of the Peloton frontend and the new independent study code is written like the latter. Without a moral dimension, neither approach is inherently better than the other.&lt;&#x2F;p&gt;
 &lt;p&gt;The former does have a moral dimension, though... and that’s where things get complicated.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -681,13 +777,19 @@ And I think this is not being met.&lt;&#x2F;p&gt;
         <title>Black Friday</title>
         <published>2020-12-09T00:00:00+00:00</published>
         <updated>2020-12-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/black-friday/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/black-friday/"/>
         <id>https://wanshenl.me/blog/archive/black-friday/</id>
         
-        <content type="html">&lt;p&gt;I think I should have done this in college. In general, I plan 10 years ahead, but I&#x27;m not very good at doing retrospectives. No time like the present?&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/black-friday/">&lt;p&gt;I think I should have done this in college. In general, I plan 10 years ahead, but I&#x27;m not very good at doing retrospectives. No time like the present?&lt;&#x2F;p&gt;
 &lt;p&gt;Engineering, per commit history:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;May
@@ -825,13 +927,19 @@ And I think this is not being met.&lt;&#x2F;p&gt;
         <title>Thanksgiving</title>
         <published>2020-12-05T00:00:00+00:00</published>
         <updated>2020-12-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/thanksgiving/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/thanksgiving/"/>
         <id>https://wanshenl.me/blog/archive/thanksgiving/</id>
         
-        <content type="html">&lt;p&gt;I turn on the tap, and water comes out.
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/thanksgiving/">&lt;p&gt;I turn on the tap, and water comes out.
 (At home, even if you pay the utilities bill, water will stop randomly. Luckily for us, we have two water tanks -- not always enough.)
 Furthermore, I can drink the water out of the tap.
 Bathing with the water doesn&#x27;t give me skin infections.&lt;&#x2F;p&gt;
@@ -876,13 +984,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Back</title>
         <published>2020-11-22T00:00:00+00:00</published>
         <updated>2020-11-22T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/back/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/back/"/>
         <id>https://wanshenl.me/blog/archive/back/</id>
         
-        <content type="html">&lt;p&gt;I actually ate very few tomatoes growing up. It turns out that you need to cut a little deeper to get rid of mold; you can still taste the mold after removing all visible mold.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/back/">&lt;p&gt;I actually ate very few tomatoes growing up. It turns out that you need to cut a little deeper to get rid of mold; you can still taste the mold after removing all visible mold.&lt;&#x2F;p&gt;
 &lt;p&gt;Probably the most mold I&#x27;ve eaten in a while, heh. My fault for not using it up sooner.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;I think I finally see a way of not exhausting weirdness budget with the catalog DSL refactor. Optimistic that this approach will pan out and that I won&#x27;t look back at it and be like this was a terrible idea.&lt;&#x2F;p&gt;
@@ -905,13 +1019,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Breather</title>
         <published>2020-11-09T00:00:00+00:00</published>
         <updated>2020-11-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/breather/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/breather/"/>
         <id>https://wanshenl.me/blog/archive/breather/</id>
         
-        <content type="html">&lt;p&gt;The general state of the world seems to be improving a little nowadays.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/breather/">&lt;p&gt;The general state of the world seems to be improving a little nowadays.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;On a personal level, I notice that I&#x27;ve started to unwind significantly. I think it is a mix of the following factors:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -937,13 +1057,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Duty</title>
         <published>2020-09-06T00:00:00+00:00</published>
         <updated>2020-09-06T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/duty/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/duty/"/>
         <id>https://wanshenl.me/blog/archive/duty/</id>
         
-        <content type="html">&lt;p&gt;A common life-cycle in the east Asian diaspora involves parents pouring resources into their children, who will in turn work hard to improve overall family standing and then take care of them in old age. This is in contrast to the western style of raising a family, which generally has more of an expectation on the parents to handle their own retirement and on the children to become independent ASAP. For children stuck between two systems, the idea of a sandwich generation has become popular -- the carers of both the previous and next generations. But that&#x27;s not exactly the topic at hand today.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/duty/">&lt;p&gt;A common life-cycle in the east Asian diaspora involves parents pouring resources into their children, who will in turn work hard to improve overall family standing and then take care of them in old age. This is in contrast to the western style of raising a family, which generally has more of an expectation on the parents to handle their own retirement and on the children to become independent ASAP. For children stuck between two systems, the idea of a sandwich generation has become popular -- the carers of both the previous and next generations. But that&#x27;s not exactly the topic at hand today.&lt;&#x2F;p&gt;
 &lt;p&gt;The problem I&#x27;m facing now, I guess, is that the following are both true:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;I think I have made a reasonable attempt at not letting my parents&#x27; efforts go to waste. I am blessed to have very supportive and caring parents, who themselves bootstrapped their life from food insecurity to a stable middle class existence. In terms of skillset, knowledge, and paper pushing credentials, I am now globally competitive, and if I were to continue and complete this PhD, this position would be cemented. In some sense, it would be throwing away generations of effort to not push myself as far along this path as I can go.&lt;&#x2F;li&gt;
@@ -957,13 +1083,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Worry</title>
         <published>2020-07-16T00:00:00+00:00</published>
         <updated>2020-07-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/worry/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/worry/"/>
         <id>https://wanshenl.me/blog/archive/worry/</id>
         
-        <content type="html">&lt;p&gt;Recent conversations have made me explore the general landscape of Brunei&#x27;s current job market a little more.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/worry/">&lt;p&gt;Recent conversations have made me explore the general landscape of Brunei&#x27;s current job market a little more.&lt;&#x2F;p&gt;
 &lt;p&gt;I am more than a little concerned that UNN&#x27;s &amp;quot;big data lead&amp;quot; position involves Hadoop. I&#x27;m pretty sure that&#x27;s a recipe for ballooning &amp;quot;no you just need more nodes to make it scale horizontally!!!&amp;quot; costs. Hm.&lt;&#x2F;p&gt;
 &lt;p&gt;More generally, I have been concerned about the technology strategy and direction in ASEAN countries for the past five years. So many shoddy webapps built on deprecated or near-deprecated technology...&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -981,13 +1113,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Melatonin</title>
         <published>2020-07-08T00:00:00+00:00</published>
         <updated>2020-07-08T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/melatonin/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/melatonin/"/>
         <id>https://wanshenl.me/blog/archive/melatonin/</id>
         
-        <content type="html">&lt;p&gt;TL;DR: If you are as stubborn as I was in considering melatonin or more generally sleep aids, I would reconsider. My quality of life has gone up dramatically.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/melatonin/">&lt;p&gt;TL;DR: If you are as stubborn as I was in considering melatonin or more generally sleep aids, I would reconsider. My quality of life has gone up dramatically.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Throughout my life so far, I&#x27;ve been pretty stubborn about &amp;quot;I don&#x27;t want to see a doctor&amp;quot;. A lot of it formed out of edgy high school beliefs of (1) if I can&#x27;t survive it on my own, I don&#x27;t deserve to survive it, and (2) not everyone has access to a doctor, isn&#x27;t it unfair if I do? This attitude generally extended to medication and supplements. I drink coffee, but apart from that, it used to take a huge amount of convincing to take something as dumb as a paracetamol (tylenol in freedom land).&lt;&#x2F;p&gt;
 &lt;p&gt;I have since mellowed down a lot from high school days, though I&#x27;m still uncomfortable with the idea of &amp;quot;a pill for every problem&amp;quot; -- Reddit stories abound about adderall abuse. Before starting undergrad, I promised myself that I would get through undergrad with the same no-dependence attitude from high school. In retrospect, this was probably a mistake and my learning has suffered for it.&lt;&#x2F;p&gt;
@@ -1011,13 +1149,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Roadmap</title>
         <published>2020-06-30T00:00:00+00:00</published>
         <updated>2020-06-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/roadmap/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/roadmap/"/>
         <id>https://wanshenl.me/blog/archive/roadmap/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;m in a really good mood right now. I learned today of research projects that are aimed towards targeted genome sequencing and smart farming. I think these are exactly the kind of core technological problems that make sense to solve in the context of Brunei.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/roadmap/">&lt;p&gt;I&#x27;m in a really good mood right now. I learned today of research projects that are aimed towards targeted genome sequencing and smart farming. I think these are exactly the kind of core technological problems that make sense to solve in the context of Brunei.&lt;&#x2F;p&gt;
 &lt;p&gt;Brunei has many unique challenges. Very prosperous as a country, but prosperity is tied to the volatile oil industry. The SGD currency peg is beneficial for citizen quality of life, but will stifle local participation in primary industry that relies on cheap labor. Most households have a digital presence, which allows for very efficient top-down information dissemination. We don&#x27;t have too many legacy systems to deal with. Small, so some business models just don&#x27;t work, but densely populated, so some others work really well.&lt;&#x2F;p&gt;
 &lt;p&gt;But in the context of my current state of contentment, it appears that it is precisely the cozy small country environment that could allow me to have a national impact.&lt;&#x2F;p&gt;
 &lt;p&gt;For the better half of the past decade, I&#x27;ve wanted to adapt the US model in which libraries are a place for personal development. I can probably spare five hours a week to teach general programming 112&#x2F;122 style workshops. The rise in remote work presents an opportunity for people to secure employment from outside the country, which provides an income stream independent of the current oil-based economy. The upfront cost is low (or zero if people bring their own laptops). Makes education accessible to everyone who cares. And since we&#x27;re small, this will easily reach a significant portion of the country. Seems like a great idea to me.&lt;&#x2F;p&gt;
@@ -1030,13 +1174,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Win condition</title>
         <published>2020-06-12T00:00:00+00:00</published>
         <updated>2020-06-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/win-condition/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/win-condition/"/>
         <id>https://wanshenl.me/blog/archive/win-condition/</id>
         
-        <content type="html">&lt;p&gt;It takes 20 minutes to compile NoisePage every time I switch branches and I cannot do much on my laptop while it is compiling, so I&#x27;ve been having a lot of time to think lately. I&#x27;ve specifically been thinking about the oft-repeated advice of &amp;quot;you&#x27;re in CMU SCS! take less classes, do more research!&amp;quot; in the context of graduate school applications. &lt;a href=&quot;https:&#x2F;&#x2F;www.cs.cmu.edu&#x2F;~harchol&#x2F;gradschooltalk.pdf&quot;&gt;Research is what matters, not grades&lt;&#x2F;a&gt;. &lt;a href=&quot;https:&#x2F;&#x2F;graphics.stanford.edu&#x2F;~kayvonf&#x2F;misc&#x2F;do_grades_matter.pdf&quot;&gt;Do grades matter? Think bigger&lt;&#x2F;a&gt;! This advice is good, common enough to be mainstream, and widely-accepted by CMU SCS undergraduates. So why don&#x27;t we take it?&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/win-condition/">&lt;p&gt;It takes 20 minutes to compile NoisePage every time I switch branches and I cannot do much on my laptop while it is compiling, so I&#x27;ve been having a lot of time to think lately. I&#x27;ve specifically been thinking about the oft-repeated advice of &amp;quot;you&#x27;re in CMU SCS! take less classes, do more research!&amp;quot; in the context of graduate school applications. &lt;a href=&quot;https:&#x2F;&#x2F;www.cs.cmu.edu&#x2F;~harchol&#x2F;gradschooltalk.pdf&quot;&gt;Research is what matters, not grades&lt;&#x2F;a&gt;. &lt;a href=&quot;https:&#x2F;&#x2F;graphics.stanford.edu&#x2F;~kayvonf&#x2F;misc&#x2F;do_grades_matter.pdf&quot;&gt;Do grades matter? Think bigger&lt;&#x2F;a&gt;! This advice is good, common enough to be mainstream, and widely-accepted by CMU SCS undergraduates. So why don&#x27;t we take it?&lt;&#x2F;p&gt;
 &lt;p&gt;Often times, even if a student &lt;strong&gt;wants&lt;&#x2F;strong&gt; to do research, &lt;strong&gt;wants&lt;&#x2F;strong&gt; to go to graduate school one hundred percent, and &lt;strong&gt;wants&lt;&#x2F;strong&gt; to take less classes, they may not. They might even feel that they cannot. This isn&#x27;t even a discussion about whether graduate school is a good idea, we&#x27;re taking that as a given. Instead, this is a discussion of my understanding as to why this phenomenon happens, based on my conversations with other undergrads and my own personal experience.&lt;&#x2F;p&gt;
 &lt;p&gt;Metrics under consideration:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -1123,13 +1273,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>News</title>
         <published>2020-06-07T00:00:00+00:00</published>
         <updated>2020-06-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/news/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/news/"/>
         <id>https://wanshenl.me/blog/archive/news/</id>
         
-        <content type="html">&lt;p&gt;There is a strong case to be made for disengaging from the news and wider media, e.g., arguments put forth by &lt;a href=&quot;http:&#x2F;&#x2F;www.aaronsw.com&#x2F;weblog&#x2F;hatethenews&quot;&gt;Swartz&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=6894244&quot;&gt;Dobelli&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=13153539&quot;&gt;Cain&lt;&#x2F;a&gt;. I used to actively and consciously live a disengaged life up until the second-last year of high school, in which I consumed basically no movies, no ads, no news, and no politics. My thoughts were my own thoughts, and my biases were my own biases.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/news/">&lt;p&gt;There is a strong case to be made for disengaging from the news and wider media, e.g., arguments put forth by &lt;a href=&quot;http:&#x2F;&#x2F;www.aaronsw.com&#x2F;weblog&#x2F;hatethenews&quot;&gt;Swartz&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=6894244&quot;&gt;Dobelli&lt;&#x2F;a&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;news.ycombinator.com&#x2F;item?id=13153539&quot;&gt;Cain&lt;&#x2F;a&gt;. I used to actively and consciously live a disengaged life up until the second-last year of high school, in which I consumed basically no movies, no ads, no news, and no politics. My thoughts were my own thoughts, and my biases were my own biases.&lt;&#x2F;p&gt;
 &lt;p&gt;What led me to change? It was a combination of factors:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Smartphone - I used a Nokia brick for most of high school. I was gifted a smartphone at some point.&lt;&#x2F;li&gt;
@@ -1174,13 +1330,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Protests</title>
         <published>2020-05-30T00:00:00+00:00</published>
         <updated>2020-05-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/protests/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/protests/"/>
         <id>https://wanshenl.me/blog/archive/protests/</id>
         
-        <content type="html">&lt;p&gt;Protest videos have unfortunately become abundant over the past year.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/protests/">&lt;p&gt;Protest videos have unfortunately become abundant over the past year.&lt;&#x2F;p&gt;
 &lt;p&gt;I think one thing that strikes me as unwise is that those protesting are not quick enough to discard the loose cannons. If people are throwing fireworks, etc, then a snap decision should be made - is it time for the pot to boil over, or do other protestors hand them over? The latter happened to some extent in early HK protests, but this seems to be happening less as I follow the current protests in LA, MN, and elsewhere. The White House fence pushing is an example of where I think protestors should be quick to disown troublemakers.&lt;&#x2F;p&gt;
 &lt;p&gt;I&#x27;ve had deeper thoughts on what it would take to make for successful protest for a while. In most cases, violence is not the answer. I wish the sasumata were more popular to pin down the troublemaking protested and protestees; technology in general could perhaps help to de-escalate situations. The general danger happens once people bunch up in tightly packed mobs, crowd dynamics and mob mentality are a thing. If you could ensure that people were always spread out.. hm.&lt;&#x2F;p&gt;
 &lt;p&gt;For example, a device with these characteristics:&lt;&#x2F;p&gt;
@@ -1200,13 +1362,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Equal opportunity</title>
         <published>2020-05-26T00:00:00+00:00</published>
         <updated>2020-05-26T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/equal-opportunity/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/equal-opportunity/"/>
         <id>https://wanshenl.me/blog/archive/equal-opportunity/</id>
         
-        <content type="html">&lt;p&gt;Some recent content that I found interesting on opportunity in general:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/equal-opportunity/">&lt;p&gt;Some recent content that I found interesting on opportunity in general:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;baboonzero&#x2F;status&#x2F;1264884582119170055&quot;&gt;On privilege&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;amyjko&#x2F;status&#x2F;1265093304825176065&quot;&gt;UCSD shifts to a lottery system for declaring CS&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -1238,13 +1406,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>The way the world ends</title>
         <published>2020-05-18T00:00:00+00:00</published>
         <updated>2020-05-18T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/the-way-the-world-ends/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/the-way-the-world-ends/"/>
         <id>https://wanshenl.me/blog/archive/the-way-the-world-ends/</id>
         
-        <content type="html">&lt;p&gt;I think the most surprising thing to come out of COVID19 is that:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/the-way-the-world-ends/">&lt;p&gt;I think the most surprising thing to come out of COVID19 is that:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;I&#x27;ve gained a lot of respect for the CMU administration. They responded to COVID19 well, in a way that fairly addressed most student needs.&lt;&#x2F;li&gt;
 &lt;li&gt;I&#x27;ve lost a lot of respect and&#x2F;or hope in a large subset of the CMU student population. This is part of a wider trend that I&#x27;ve been observing from a distance over the past year, and is the topic of the post today.&lt;&#x2F;li&gt;
@@ -1310,13 +1484,19 @@ Towards aiming for a gentler world.&lt;&#x2F;p&gt;
         <title>Favorite matrix multiplication</title>
         <published>2020-05-16T00:00:00+00:00</published>
         <updated>2020-05-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/favorite-matrix-multiplication/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/favorite-matrix-multiplication/"/>
         <id>https://wanshenl.me/blog/archive/favorite-matrix-multiplication/</id>
         
-        <content type="html">&lt;p&gt;Just some quick random beginner-level thoughts on matrix multiplication.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/favorite-matrix-multiplication/">&lt;p&gt;Just some quick random beginner-level thoughts on matrix multiplication.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;foreword&quot;&gt;Foreword&lt;&#x2F;h2&gt;
 &lt;p&gt;I must have written this down at least 20 times while I was at CMU. It reassures me that I&#x27;m pushing numbers around correctly.&lt;&#x2F;p&gt;
 &lt;p&gt;\[
@@ -1477,13 +1657,19 @@ And to get the second row of the result,
         <title>My life in numbers</title>
         <published>2020-05-12T00:00:00+00:00</published>
         <updated>2020-05-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/my-life-in-numbers/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/my-life-in-numbers/"/>
         <id>https://wanshenl.me/blog/archive/my-life-in-numbers/</id>
         
-        <content type="html">&lt;p&gt;Perhaps I should say my life in pictures, but I feel that implies photos...&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/my-life-in-numbers/">&lt;p&gt;Perhaps I should say my life in pictures, but I feel that implies photos...&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Information derived from a double-entry bookkeeping Excel sheet that I&#x27;ve been maintaining for the past four years (since I got to CMU). Across approximately 2100 transactions, the stats are:&lt;&#x2F;p&gt;
 &lt;img src=&quot;.&#x2F;income.jpg&quot; class=&quot;ba bw1&quot; &#x2F;&gt;
@@ -1519,13 +1705,19 @@ And to get the second row of the result,
         <title>Visit Day</title>
         <published>2020-03-23T00:00:00+00:00</published>
         <updated>2020-03-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/visit-day/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/visit-day/"/>
         <id>https://wanshenl.me/blog/archive/visit-day/</id>
         
-        <content type="html">&lt;h2 id=&quot;foreword&quot;&gt;Foreword&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/visit-day/">&lt;h2 id=&quot;foreword&quot;&gt;Foreword&lt;&#x2F;h2&gt;
 &lt;p&gt;There are amazing resources for deciding whether or not you should do a PhD, and some of these resources also describe how you should go about doing one. Some examples which influenced me heavily are &lt;a href=&quot;https:&#x2F;&#x2F;www.cs.cmu.edu&#x2F;~harchol&#x2F;gradschooltalk.pdf&quot;&gt;Mor&#x27;s grad school talk&lt;&#x2F;a&gt; and &lt;a href=&quot;http:&#x2F;&#x2F;pgbovine.net&#x2F;PhD-memoir.htm&quot;&gt;Guo&#x27;s PhD memoir&lt;&#x2F;a&gt;. There is also great advice from &lt;a href=&quot;https:&#x2F;&#x2F;da-data.blogspot.com&#x2F;2015&#x2F;03&#x2F;reflecting-on-cs-graduate-admissions.html&quot;&gt;Dave&#x27;s blog&lt;&#x2F;a&gt; on what different research areas tend to value. With that said, there are not as many resources out there for how people are deciding between graduate schools. I am very fortunate to have met Andy, who gave me valuable life advice and a &lt;strong&gt;lot&lt;&#x2F;strong&gt; of support over the past two years. I hope that this will help other students, especially other first-gen students who are also winging it as they go, in navigating the whole PhD application process. I think the most important thing to know is that preparing to apply to a PhD program starts &lt;em&gt;early&lt;&#x2F;em&gt;. I see people who know what they are doing start as early as frosh fall. The latest time to start and still be competitive is probably around junior fall.&lt;&#x2F;p&gt;
 &lt;p&gt;This document is mostly jumbled thoughts on visit day formats and on the CS PhD program structure at Carnegie Mellon, Stanford, and UC Berkeley. Note that this is a mostly sanitized version where sensitive information from private chats has been stripped out; if you recognize something that you told me and would like for it to be removed, please let me know by email.&lt;&#x2F;p&gt;
 &lt;p&gt;Note that I also had the pleasure (?) of being in the first group of students to experience a virtual visit day format for Stanford and UC Berkeley. I attended CMU visit days in person. This is the second time that coronaviruses have affected my choice of educational institution.&lt;&#x2F;p&gt;
@@ -1679,13 +1871,19 @@ And to get the second row of the result,
         <title>Boundaries</title>
         <published>2019-12-11T00:00:00+00:00</published>
         <updated>2019-12-11T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/boundaries/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/boundaries/"/>
         <id>https://wanshenl.me/blog/archive/boundaries/</id>
         
-        <content type="html">&lt;p&gt;This semester is really stretching my TAing philosophy. I&#x27;ve kind of been ignoring that elephant in the room, until she scolded me for it; I am comfortable listening to her, I guess. We&#x27;ve disagreed on things and been disappointed in each other, but I don&#x27;t think we&#x27;ve ever not had each other&#x27;s best interests at heart. Something I treasure and hope to keep, going forward. We will see.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/boundaries/">&lt;p&gt;This semester is really stretching my TAing philosophy. I&#x27;ve kind of been ignoring that elephant in the room, until she scolded me for it; I am comfortable listening to her, I guess. We&#x27;ve disagreed on things and been disappointed in each other, but I don&#x27;t think we&#x27;ve ever not had each other&#x27;s best interests at heart. Something I treasure and hope to keep, going forward. We will see.&lt;&#x2F;p&gt;
 &lt;p&gt;But well, hm. Objectively, I have received a lot of requests this semester of the form: &amp;quot;I know you&#x27;re (tired, busy, rushing a deadline due tonight, sick with a fever), but can you (help with course thing)&amp;quot;. Repeatedly, even, despite their stuff being due later or having more flexibility. For every single project. Office hours stretching to four times their length. Scattered piazza posts fishing for an answer rather than for understanding. It is a little tiring and devaluing to feel like I exist mainly as a provider of help, and it is frustrating that people do not respect TA boundaries like first-year students did. Plus it conflicts with my TA morals, though quietly it seems like most TAs become disillusioned with the system as they progress into senior year. The boundary of TA and human, the boundary of encouragement and hand-holding, the boundary of cheating and collaboration..&lt;&#x2F;p&gt;
 &lt;p&gt;Well, I will continue to triage. Anything life-threatening or a mistake on our end should take priority, of course. But right now, rather than answer piazza, I will continue to nurse my fever and get ready for my midterm tomorrow and my own set of deadlines. On the bright side, the sharp headache of the past day has subsided.&lt;&#x2F;p&gt;
 &lt;p&gt;A little disappointed in students, but at least she is there.&lt;&#x2F;p&gt;
@@ -1697,13 +1895,19 @@ And to get the second row of the result,
         <title>Qué</title>
         <published>2019-12-06T00:00:00+00:00</published>
         <updated>2019-12-06T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/que/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/que/"/>
         <id>https://wanshenl.me/blog/archive/que/</id>
         
-        <content type="html">&lt;p&gt;Wish I could balance out my test taking for systems and theory courses a little. All assessments have been pretty fair this semester, but my performance is very.. hmm... high coefficient of variation. Spend a night on 418, top 10, spend a week on 857, bottom percentile... oh well.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/que/">&lt;p&gt;Wish I could balance out my test taking for systems and theory courses a little. All assessments have been pretty fair this semester, but my performance is very.. hmm... high coefficient of variation. Spend a night on 418, top 10, spend a week on 857, bottom percentile... oh well.&lt;&#x2F;p&gt;
 &lt;p&gt;Had a brief chat with a prof today, and I&#x27;m wrapping up my thoughts a little more. A common question, I think, is: if you took the undergraduate probability and computing, is graduate performance modeling worthwhile? To this, I think my answer is a pretty definite yes. If you&#x27;re strong in math, you can probably skip straight to the graduate version, but if you aren&#x27;t (i.e., me), the undergrad version is good preparation.&lt;&#x2F;p&gt;
 &lt;p&gt;The undergraduate course goes through basic probability, randomized algorithms, and a little on Markov chains. I remember finding randomized algorithms and reservoir sampling very cool, enough to flip through Mitz and Upfal. The undergrad course was paced slowly enough that I didn&#x27;t feel like I was dying too much, and yet covered enough for me to see that probability-based math was actually pretty damn useful. We also covered how a bloom filter works, which should honestly be moved to the core curriculum somewhere. Definitely a course worth taking.&lt;&#x2F;p&gt;
 &lt;p&gt;The graduate version cuts out randomized algorithms but otherwise covers all of the undergraduate content in about half a semester. It goes on to do basically everything in her book. To me, the great value-add from taking this course was covering:&lt;&#x2F;p&gt;
@@ -1725,13 +1929,19 @@ And to get the second row of the result,
         <title>Self</title>
         <published>2019-11-25T00:00:00+00:00</published>
         <updated>2019-11-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/self/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/self/"/>
         <id>https://wanshenl.me/blog/archive/self/</id>
         
-        <content type="html">&lt;p&gt;The past week has been interesting. In some ways, I am very much embracing old habits again, for better or worse.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/self/">&lt;p&gt;The past week has been interesting. In some ways, I am very much embracing old habits again, for better or worse.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Seeing a dad count out what&#x27;s left on their WIC restored some perspective to my life. It is also a little absurd, what the hell, they specify down to the &amp;quot;one carton of 1% skim milk left, two loaves of this specific bread&amp;quot;? I believe strongly in letting people pick out their own groceries. Choice empowers.&lt;&#x2F;p&gt;
 &lt;p&gt;I need to remember that people are more complex and caring than the usual &amp;quot;my grades! my jobs! my salary!&amp;quot;. I think I need a break from dealing with students in general. Not their fault, of course. They&#x27;re like what, 20? Perspective will come in due time.&lt;&#x2F;p&gt;
@@ -1755,13 +1965,19 @@ And to get the second row of the result,
         <title>TA Seminar</title>
         <published>2019-11-20T00:00:00+00:00</published>
         <updated>2019-11-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/ta-seminar/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/ta-seminar/"/>
         <id>https://wanshenl.me/blog/archive/ta-seminar/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;m really rather disappointed with 418 this semester. I think it is mostly that the assignments have been a letdown, and the class project is annoying busywork on top of the actual research that I want to do.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/ta-seminar/">&lt;p&gt;I&#x27;m really rather disappointed with 418 this semester. I think it is mostly that the assignments have been a letdown, and the class project is annoying busywork on top of the actual research that I want to do.&lt;&#x2F;p&gt;
 &lt;p&gt;The assignments so far:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;A1: SIMD. I liked this, though I felt the &amp;quot;official&amp;quot; solution was lame. I suppose that their general approach works unreasonably well in real life too, but it feels a little mindless. Not their fault though.&lt;&#x2F;li&gt;
@@ -1787,13 +2003,19 @@ And to get the second row of the result,
         <title>Inaction</title>
         <published>2019-11-17T00:00:00+00:00</published>
         <updated>2019-11-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/inaction/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/inaction/"/>
         <id>https://wanshenl.me/blog/archive/inaction/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;ve been thinking a lot recently about what matters.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/inaction/">&lt;p&gt;I&#x27;ve been thinking a lot recently about what matters.&lt;&#x2F;p&gt;
 &lt;p&gt;I don&#x27;t think that people have an obligation to make the world better. It sucks, but it is what it is -- most people have too much to lose or are too scared to act. Food on the table, a stable job, some level of recognition; silence is cheap, and I don&#x27;t fault people for it.&lt;&#x2F;p&gt;
 &lt;p&gt;I do think, though, that people have an obligation to not make the world worse. There is a difference between staying quiet and supporting oppression, and I&#x27;m a little disconcerted that a number of CMU students have comfortably chosen the latter.&lt;&#x2F;p&gt;
 &lt;p&gt;What has changed over the past half-decade: the world, or my view of it? Back then, it felt like the world had a lot of well-meaning misguided energy, e.g. in hacktivism, but today that too has faded into obscure irrelevance. Now, it seems that we are bending the knee to salami tactics. &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=JKbDKsNsjac&quot;&gt;Scenario one&lt;&#x2F;a&gt; evolves into scenario two, and Piccadilly approaches..&lt;&#x2F;p&gt;
@@ -1804,13 +2026,19 @@ And to get the second row of the result,
         <title>Purpose</title>
         <published>2019-11-10T00:00:00+00:00</published>
         <updated>2019-11-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/purpose/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/purpose/"/>
         <id>https://wanshenl.me/blog/archive/purpose/</id>
         
-        <content type="html">&lt;p&gt;Revived my blog a few days ago. It was fun to go back and look back at some of the older posts. I don&#x27;t think I&#x27;ve changed very much, though I seem a little less excitable nowadays.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/purpose/">&lt;p&gt;Revived my blog a few days ago. It was fun to go back and look back at some of the older posts. I don&#x27;t think I&#x27;ve changed very much, though I seem a little less excitable nowadays.&lt;&#x2F;p&gt;
 &lt;p&gt;In retrospect, the past semester has been a little wild. Between BusTub, trying to keep Piazza answered, the theory courses, and terrier, I&#x27;ve been on a fairly regular rotation of (two days on campus working, one day at home). Getting a little too good at taking naps in my chair in the lab, and I have a toothbrush on campus now? I adapted surprisingly well to that lifestyle though. I&#x27;ve felt pretty alright overall.&lt;&#x2F;p&gt;
 &lt;p&gt;I am a little frustrated internally with a small number of students this semester. I&#x27;ve tried pretty hard to eliminate the pain points I had when taking this course, mostly with respect to the codebase. Given that this is a 400&#x2F;600 level course, it wouldn&#x27;t kill students to tweak the sample test cases a little... but in the end, it takes two to teach and learn.&lt;&#x2F;p&gt;
 &lt;p&gt;The theory courses have been awesome. I kind of wish 857 got to classed Jackson networks faster and had a final project instead of the barrage of homework; it looks pretty relevant to the stuff I&#x27;m doing in 418 right now. 859 has been intense. A new rabbit hole appears almost every week (and an absurd number of them have the W citation, I don&#x27;t know how he does it). Everything has been directly applicable to systems research and I&#x27;m possibly the most satisfied I&#x27;ve been with my overall schedule, even if it is killing me a little.&lt;&#x2F;p&gt;
@@ -1825,13 +2053,19 @@ And to get the second row of the result,
         <title>Ginger tea</title>
         <published>2019-03-08T00:00:00+00:00</published>
         <updated>2019-03-08T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/ginger-tea/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/ginger-tea/"/>
         <id>https://wanshenl.me/blog/archive/ginger-tea/</id>
         
-        <content type="html">&lt;p&gt;I haven&#x27;t been this sick in a long time.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/ginger-tea/">&lt;p&gt;I haven&#x27;t been this sick in a long time.&lt;&#x2F;p&gt;
 &lt;p&gt;Or, more accurately, I used to stubbornly refuse to accept that I was sick. Selfish in hindsight (germs for all!), though it was more of a &amp;quot;can go see doctor? can go work lo&amp;quot; attitude.&lt;&#x2F;p&gt;
 &lt;p&gt;Sitting at home and staring out of the window.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;wanshenl.me&#x2F;blog&#x2F;archive&#x2F;ginger-tea&#x2F;.&#x2F;window.jpg&quot; alt=&quot;window&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
@@ -1854,13 +2088,19 @@ And to get the second row of the result,
         <title>Grit</title>
         <published>2019-01-20T00:00:00+00:00</published>
         <updated>2019-01-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/grit/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/grit/"/>
         <id>https://wanshenl.me/blog/archive/grit/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;m following a thread on SIGCSE with some interest: &amp;quot;Non-PL-Based CS Placement Exams&amp;quot;. Select quotes:&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/grit/">&lt;p&gt;I&#x27;m following a thread on SIGCSE with some interest: &amp;quot;Non-PL-Based CS Placement Exams&amp;quot;. Select quotes:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Haven&#x27;t we agreed as a community that &amp;quot;aptitude&amp;quot; is a pernicious and exclusionary construct? ... prior experience is the most important predictor of success.
 &lt;ul&gt;
@@ -1928,13 +2168,19 @@ And to get the second row of the result,
         <title>Pause</title>
         <published>2018-12-30T00:00:00+00:00</published>
         <updated>2018-12-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/pause2/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/pause2/"/>
         <id>https://wanshenl.me/blog/archive/pause2/</id>
         
-        <content type="html">&lt;p&gt;I feel like I actually get less sleep here, hm. But voluntarily, no assignments being rushed.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/pause2/">&lt;p&gt;I feel like I actually get less sleep here, hm. But voluntarily, no assignments being rushed.&lt;&#x2F;p&gt;
 &lt;p&gt;Wake up 5am, chickens into breakfast into morning routine of meal prep etc, finish around 130ish, crash, wake up, evening routine until 7, then whatever energy permits. Currently, that&#x27;s a random assortment of 418, 701, UA, and DB.&lt;&#x2F;p&gt;
 &lt;p&gt;Well, technically, that&#x27;s on-par or even more sleep, but I&#x27;m active for almost all of my waking hours as opposed to being permanently half-off.&lt;&#x2F;p&gt;
 &lt;p&gt;Not very productive in the technical growth sense, but in the medium future, I think I would choose the same way. &amp;quot;wish I got one more point on cachelab back in college&amp;quot; disease - very unlikely. All in all, unsatisfyingly satisfying.&lt;&#x2F;p&gt;
@@ -1951,13 +2197,19 @@ And to get the second row of the result,
         <title>wau</title>
         <published>2018-12-19T00:00:00+00:00</published>
         <updated>2018-12-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/wau/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/wau/"/>
         <id>https://wanshenl.me/blog/archive/wau/</id>
         
-        <content type="html">&lt;p&gt;of all semesters I&#x27;ve had so far, this is not the one I&#x27;d expect to hit my GPA upwards.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/wau/">&lt;p&gt;of all semesters I&#x27;ve had so far, this is not the one I&#x27;d expect to hit my GPA upwards.&lt;&#x2F;p&gt;
 &lt;p&gt;Doesn&#x27;t really matter too much, but huh.&lt;&#x2F;p&gt;
 </content>
         
@@ -1966,13 +2218,19 @@ And to get the second row of the result,
         <title>Queues</title>
         <published>2018-11-10T00:00:00+00:00</published>
         <updated>2018-11-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/queues/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/queues/"/>
         <id>https://wanshenl.me/blog/archive/queues/</id>
         
-        <content type="html">&lt;p&gt;&lt;em&gt;&#x2F;soapbox&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/queues/">&lt;p&gt;&lt;em&gt;&#x2F;soapbox&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Mildly irked by the general feedback. I don&#x27;t think people know what they&#x27;re asking for when it comes to OH queue times.&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;Process&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;When I approach someone in office hours, I have a process.&lt;&#x2F;p&gt;
@@ -2032,13 +2290,19 @@ And to get the second row of the result,
         <title>不枉此生</title>
         <published>2018-11-01T00:00:00+00:00</published>
         <updated>2018-11-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/ssh/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/ssh/"/>
         <id>https://wanshenl.me/blog/archive/ssh/</id>
         
-        <content type="html">&lt;blockquote&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/ssh/">&lt;blockquote&gt;
 &lt;p&gt;不枉此生&lt;&#x2F;p&gt;
 &lt;p&gt;若我能阻止一颗心被破碎&lt;&#x2F;p&gt;
 &lt;p&gt;我将不枉此生&lt;&#x2F;p&gt;
@@ -2064,13 +2328,19 @@ And to get the second row of the result,
         <title>Watchmen</title>
         <published>2018-10-22T00:00:00+00:00</published>
         <updated>2018-10-22T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/watchmen/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/watchmen/"/>
         <id>https://wanshenl.me/blog/archive/watchmen/</id>
         
-        <content type="html">&lt;p&gt;Saw Jim again today, he had a coat on. Still wonder how he normally gets through winter, though. I think I&#x27;ve met him five times now, and each time he&#x27;s been pretty pleasant to talk to. Might sit down for lunch with him if he&#x27;s around and I can find the time.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/watchmen/">&lt;p&gt;Saw Jim again today, he had a coat on. Still wonder how he normally gets through winter, though. I think I&#x27;ve met him five times now, and each time he&#x27;s been pretty pleasant to talk to. Might sit down for lunch with him if he&#x27;s around and I can find the time.&lt;&#x2F;p&gt;
 &lt;p&gt;The stories behind the people that we as a society collectively ignore.. I would have liked to meet Shuffles and Beastmaster, I think. I feel a lot of them are fundamentally good. Given the support system that a lot of us take for granted, what would they have gone on to do? hm.&lt;&#x2F;p&gt;
 </content>
         
@@ -2079,13 +2349,19 @@ And to get the second row of the result,
         <title>Midterms</title>
         <published>2018-10-21T00:00:00+00:00</published>
         <updated>2018-10-21T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/midterms/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/midterms/"/>
         <id>https://wanshenl.me/blog/archive/midterms/</id>
         
-        <content type="html">&lt;p&gt;WAUUUUU I GOT AN A ON A CDM MIDTERM&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/midterms/">&lt;p&gt;WAUUUUU I GOT AN A ON A CDM MIDTERM&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Midterm grades are all out. I&#x27;m generally happy as long as I&#x27;m around the average, but that wasn&#x27;t quite true this sem : ) New semester, new records! Coming dangerously close to a repeat of vector.&lt;&#x2F;p&gt;
 &lt;p&gt;In terms of relative performance, CDM &amp;gt;&amp;gt; PL &amp;gt;&amp;gt; 445. I was kind of expecting the reverse, but it does reflect the amount of effort I put into them. Maybe I&#x27;ll get disowned by Pavlo tomorrow though.&lt;&#x2F;p&gt;
@@ -2098,13 +2374,19 @@ And to get the second row of the result,
         <title>Pause</title>
         <published>2018-10-19T00:00:00+00:00</published>
         <updated>2018-10-19T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/pause/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/pause/"/>
         <id>https://wanshenl.me/blog/archive/pause/</id>
         
-        <content type="html">&lt;p&gt;Well, those midterms shaved a few days off my life. Midsemester grades will be an exciting time.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/pause/">&lt;p&gt;Well, those midterms shaved a few days off my life. Midsemester grades will be an exciting time.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Wasted a little time reading about the SFFA hubbub. Not expecting anything productive to come of it, from either side. Everyone everywhere tends to just push their own agenda.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -2124,13 +2406,19 @@ And to get the second row of the result,
         <title>ARIES</title>
         <published>2018-09-30T00:00:00+00:00</published>
         <updated>2018-09-30T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/aries/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/aries/"/>
         <id>https://wanshenl.me/blog/archive/aries/</id>
         
-        <content type="html">&lt;p&gt;New month, new blog? Crash recovery.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/aries/">&lt;p&gt;New month, new blog? Crash recovery.&lt;&#x2F;p&gt;
 &lt;p&gt;Speaking of crashes, over the past week I almost crashed into:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;signpost on Forbes&lt;&#x2F;li&gt;
@@ -2161,13 +2449,19 @@ And to get the second row of the result,
         <title>Mistakes</title>
         <published>2018-09-05T00:00:00+00:00</published>
         <updated>2018-09-05T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/mistakes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/mistakes/"/>
         <id>https://wanshenl.me/blog/archive/mistakes/</id>
         
-        <content type="html">&lt;p&gt;There&#x27;s supposed to be a teaching method where you intentionally make mistakes in class. The hope is that people will point it out, or you live debug together.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/mistakes/">&lt;p&gt;There&#x27;s supposed to be a teaching method where you intentionally make mistakes in class. The hope is that people will point it out, or you live debug together.&lt;&#x2F;p&gt;
 &lt;p&gt;Tried that for the first time today in lab. yeah... that requires much more experience than I currently have. That was terrible; I&#x27;d be mad if I was a student. I&#x27;m not doing that again.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Having to pick between CDM and 312 OH is suffering. Both of the best TAs are scheduled at the same time. blarg.&lt;&#x2F;p&gt;
@@ -2184,13 +2478,19 @@ And to get the second row of the result,
         <title>RTFM</title>
         <published>2018-08-23T00:00:00+00:00</published>
         <updated>2018-08-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/rtfm/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/rtfm/"/>
         <id>https://wanshenl.me/blog/archive/rtfm/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;ve been talking to a bunch of people about 213 over the past week. hm. I still do not think that you need the book. Just read the source code! Code lies less than documentation does.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/rtfm/">&lt;p&gt;I&#x27;ve been talking to a bunch of people about 213 over the past week. hm. I still do not think that you need the book. Just read the source code! Code lies less than documentation does.&lt;&#x2F;p&gt;
 &lt;p&gt;Brought back a funny memory from taking 440 though. I was either done with the course or halfway through the last project, and then someone casually asked me something about the project library documentation. Documentation? What documentation??? I thought we were just supposed to read the source for everything and didn&#x27;t question it. Went back and read everything I missed - whoops, would have made the projects &lt;strong&gt;much&lt;&#x2F;strong&gt; easier.&lt;&#x2F;p&gt;
 &lt;p&gt;Now that class is starting, that&#x27;s something to keep in mind while I TA. Point out that documentation exists! Wield the appendix! Because you&#x27;ll get students.. &lt;em&gt;ahem&lt;&#x2F;em&gt; me &lt;em&gt;ahem&lt;&#x2F;em&gt;... who will finish the entire module without realizing it.&lt;&#x2F;p&gt;
 </content>
@@ -2200,13 +2500,19 @@ And to get the second row of the result,
         <title>Budget</title>
         <published>2018-08-18T00:00:00+00:00</published>
         <updated>2018-08-18T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/budget/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/budget/"/>
         <id>https://wanshenl.me/blog/archive/budget/</id>
         
-        <content type="html">&lt;p&gt;I crossed the 1000 transaction mark today while bookkeeping and ran some stats.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/budget/">&lt;p&gt;I crossed the 1000 transaction mark today while bookkeeping and ran some stats.&lt;&#x2F;p&gt;
 &lt;center&gt;&lt;img src=&quot;.&#x2F;post-tax-incomes.png&quot; alt=&quot;Post-tax income chart&quot; &#x2F;&gt;&lt;&#x2F;center&gt;
 &lt;p&gt;Some thoughts on the chart:&lt;&#x2F;p&gt;
 &lt;ul&gt;
@@ -2226,13 +2532,19 @@ And to get the second row of the result,
         <title>Nostalgia</title>
         <published>2018-06-25T00:00:00+00:00</published>
         <updated>2018-06-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/nostalgia/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/nostalgia/"/>
         <id>https://wanshenl.me/blog/archive/nostalgia/</id>
         
-        <content type="html">&lt;p&gt;Met with friends over the weekend. Unexpected play, a nice museum trip, but more importantly, haven&#x27;t seen them in a while. Good times.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/nostalgia/">&lt;p&gt;Met with friends over the weekend. Unexpected play, a nice museum trip, but more importantly, haven&#x27;t seen them in a while. Good times.&lt;&#x2F;p&gt;
 &lt;p&gt;At various points I was literally cornered and asked to get back into gaming. hmmmmmmm...&lt;&#x2F;p&gt;
 &lt;p&gt;I think I&#x27;m getting better at articulating what I value. Pretty hard to turn down sincere requests.&lt;&#x2F;p&gt;
 &lt;p&gt;A plus of talking to non-CMU people is that you can be really upfront with courseload. Yes, I can spare an hour or three daily. I wasn&#x27;t doing much with my time anyway. And, to be cheesy, I was reminded that gaming wasn&#x27;t always a waste of time to me. The book of the future, the medium that connects different cultures and languages - in some ways, this is true today.&lt;&#x2F;p&gt;
@@ -2252,13 +2564,19 @@ And to get the second row of the result,
         <title>Scribble</title>
         <published>2018-06-23T00:00:00+00:00</published>
         <updated>2018-06-23T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/scribble/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/scribble/"/>
         <id>https://wanshenl.me/blog/archive/scribble/</id>
         
-        <content type="html">&lt;h1 id=&quot;strategies&quot;&gt;Strategies&lt;&#x2F;h1&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/scribble/">&lt;h1 id=&quot;strategies&quot;&gt;Strategies&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;Ask them to draw a picture of the starting state and the final state.&lt;&#x2F;p&gt;
@@ -2370,13 +2688,19 @@ And to get the second row of the result,
         <title>Reset</title>
         <published>2018-06-07T00:00:00+00:00</published>
         <updated>2018-06-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/reset/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/reset/"/>
         <id>https://wanshenl.me/blog/archive/reset/</id>
         
-        <content type="html">&lt;p&gt;Two weeks of biking 6 km daily later, I think I&#x27;m confident with my biking now. Sacrifices made amounted to bits of my right leg and a pair of glasses. Considering that I haven&#x27;t biked in 10 years, I&#x27;m pretty happy about that.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/reset/">&lt;p&gt;Two weeks of biking 6 km daily later, I think I&#x27;m confident with my biking now. Sacrifices made amounted to bits of my right leg and a pair of glasses. Considering that I haven&#x27;t biked in 10 years, I&#x27;m pretty happy about that.&lt;&#x2F;p&gt;
 &lt;p&gt;Going uphill is still a challenge, but that&#x27;s probably related to the fact that my lower gears buck me harder than a horse. I&#x27;ll get that fixed eventually.&lt;&#x2F;p&gt;
 &lt;p&gt;Overall, a leisurely 30 min commute to school doesn&#x27;t sound so bad.&lt;&#x2F;p&gt;
 &lt;p&gt;Though if I could, I&#x27;d probably go back in time and point out to past me that I was planning to live on top of a hill. Like... literally on top of a hill. Well, no risk of floods.&lt;&#x2F;p&gt;
@@ -2394,13 +2718,19 @@ And to get the second row of the result,
         <title>Thinking</title>
         <published>2018-05-21T00:00:00+00:00</published>
         <updated>2018-05-21T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/thinking/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/thinking/"/>
         <id>https://wanshenl.me/blog/archive/thinking/</id>
         
-        <content type="html">&lt;p&gt;oof. I look forward to the day that I have more adventures than misadventures on my bike.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/thinking/">&lt;p&gt;oof. I look forward to the day that I have more adventures than misadventures on my bike.&lt;&#x2F;p&gt;
 &lt;p&gt;I probably should get the gear slipping checked out.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Grades aren&#x27;t finalized yet, but they&#x27;re looking to be much better than expected. I might actually list again, subject to peer evaluation whims, not that it matters much plus I broke the streak last semester anyway.&lt;&#x2F;p&gt;
@@ -2422,13 +2752,19 @@ And to get the second row of the result,
         <title>Elephants and lions</title>
         <published>2018-05-04T00:00:00+00:00</published>
         <updated>2018-05-04T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/elephants-and-lions/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/elephants-and-lions/"/>
         <id>https://wanshenl.me/blog/archive/elephants-and-lions/</id>
         
-        <content type="html">&lt;blockquote&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/elephants-and-lions/">&lt;blockquote&gt;
 &lt;p&gt;(waiting outside a door with another student for OH)&lt;&#x2F;p&gt;
 &lt;p&gt;Prof: Wait outside for a minute. Talk to each other!&lt;&#x2F;p&gt;
 &lt;p&gt;(some time later)&lt;&#x2F;p&gt;
@@ -2449,13 +2785,19 @@ And to get the second row of the result,
         <title>Random walks</title>
         <published>2018-04-12T00:00:00+00:00</published>
         <updated>2018-04-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/random-walks/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/random-walks/"/>
         <id>https://wanshenl.me/blog/archive/random-walks/</id>
         
-        <content type="html">&lt;p&gt;The weather in Pittsburgh is pretty wild. From snow to rain to a sunny afternoon in the span of a week, almost like someone compressed time.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/random-walks/">&lt;p&gt;The weather in Pittsburgh is pretty wild. From snow to rain to a sunny afternoon in the span of a week, almost like someone compressed time.&lt;&#x2F;p&gt;
 &lt;p&gt;Speaking of time, my sense of time is a little broken right now. Looking forward to the day that I don&#x27;t need to set a 3am alarm; hopefully carnival will do that. I&#x27;m a little annoyed that after all that proofreading, I still didn&#x27;t catch the mistake before it went out, but I guess I can&#x27;t ask too much from sleepy me.&lt;&#x2F;p&gt;
 &lt;p&gt;In any case, the weather today was really nice. So I stopped thinking about markov chains and random walks and went on a walk myself instead.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -2484,13 +2826,19 @@ And to get the second row of the result,
         <title>Decisions</title>
         <published>2018-04-07T00:00:00+00:00</published>
         <updated>2018-04-07T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/decisions/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/decisions/"/>
         <id>https://wanshenl.me/blog/archive/decisions/</id>
         
-        <content type="html">&lt;p&gt;I think my linguistics quiz just got carried by some residual knowledge of Turkish and Arabic. Well, I&#x27;m not complaining. I need to start paying a little more attention to that class though.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/decisions/">&lt;p&gt;I think my linguistics quiz just got carried by some residual knowledge of Turkish and Arabic. Well, I&#x27;m not complaining. I need to start paying a little more attention to that class though.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;Knowingly making suboptimal decisions because they&#x27;d keep the group happy or otherwise sound like more fun. I got used to this feeling from playing dota - davai! - and though I haven&#x27;t played that in a while, it still feels familiar.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -2505,13 +2853,19 @@ And to get the second row of the result,
         <title>Truths, feedback, and priorities</title>
         <published>2018-03-24T00:00:00+00:00</published>
         <updated>2018-03-24T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/truths-feedback-and-priorities/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/truths-feedback-and-priorities/"/>
         <id>https://wanshenl.me/blog/archive/truths-feedback-and-priorities/</id>
         
-        <content type="html">&lt;blockquote&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/truths-feedback-and-priorities/">&lt;blockquote&gt;
 &lt;p&gt;... [the elves] have perfected the art of saying one thing and meaning another. Many times they only reveal part of the truth and withhold the rest.&lt;&#x2F;p&gt;
 &lt;p&gt;(in the context of a language where you cannot lie)&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
@@ -2536,13 +2890,19 @@ And to get the second row of the result,
         <title>Around the world in 58 hours</title>
         <published>2018-03-15T00:00:00+00:00</published>
         <updated>2018-03-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/around-the-world-in-58-hours/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/around-the-world-in-58-hours/"/>
         <id>https://wanshenl.me/blog/archive/around-the-world-in-58-hours/</id>
         
-        <content type="html">&lt;p&gt;Break is almost over and soon I&#x27;ll embark on another 50+ hour trip.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/around-the-world-in-58-hours/">&lt;p&gt;Break is almost over and soon I&#x27;ll embark on another 50+ hour trip.&lt;&#x2F;p&gt;
 &lt;p&gt;Things that should have happened:&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;finish my homework&lt;&#x2F;li&gt;
@@ -2584,13 +2944,19 @@ And to get the second row of the result,
         <title>Plans and planes</title>
         <published>2018-03-09T00:00:00+00:00</published>
         <updated>2018-03-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/plans-and-planes/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/plans-and-planes/"/>
         <id>https://wanshenl.me/blog/archive/plans-and-planes/</id>
         
-        <content type="html">&lt;p&gt;Lab was pretty fun this week, notwithstanding coffee and midterm woes. &amp;quot;Why are caches important?&amp;quot; is a question that I&#x27;ve never thought about in-depth before; people just kind of accept that caching = speedy, but there&#x27;s so much more that you can pull out of it. Credit to her for asking it, though I hope I didn&#x27;t miss any actual 150-related questions while this was going on.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/plans-and-planes/">&lt;p&gt;Lab was pretty fun this week, notwithstanding coffee and midterm woes. &amp;quot;Why are caches important?&amp;quot; is a question that I&#x27;ve never thought about in-depth before; people just kind of accept that caching = speedy, but there&#x27;s so much more that you can pull out of it. Credit to her for asking it, though I hope I didn&#x27;t miss any actual 150-related questions while this was going on.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 &lt;p&gt;&lt;em&gt;Note: I believe strongly in using revised histories (aka alternative facts) if it simplifies explanation and gets the point across better. All facts are potentially alternative unless otherwise stated.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Consider ordering takeout from Macs.&lt;&#x2F;p&gt;
@@ -2689,13 +3055,19 @@ And to get the second row of the result,
         <title>Juggling and Balancing</title>
         <published>2018-02-20T00:00:00+00:00</published>
         <updated>2018-02-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/juggling-and-balancing/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/juggling-and-balancing/"/>
         <id>https://wanshenl.me/blog/archive/juggling-and-balancing/</id>
         
-        <content type="html">&lt;p&gt;Well, I didn&#x27;t break my vector high score, but PNC midterm didn&#x27;t go too well. I&#x27;m usually on the wrong end of being 1 stdev away.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/juggling-and-balancing/">&lt;p&gt;Well, I didn&#x27;t break my vector high score, but PNC midterm didn&#x27;t go too well. I&#x27;m usually on the wrong end of being 1 stdev away.&lt;&#x2F;p&gt;
 &lt;p&gt;A quick review of resolutions..&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;I have been getting more sleep, actually. I wake up naturally now.&lt;&#x2F;li&gt;
@@ -2721,13 +3093,19 @@ And to get the second row of the result,
         <title>Rusty C</title>
         <published>2018-01-29T00:00:00+00:00</published>
         <updated>2018-01-29T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/rusty-c/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/rusty-c/"/>
         <id>https://wanshenl.me/blog/archive/rusty-c/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;m pretty happy that I don&#x27;t have to go into lab tomorrow.. well, today.. extolling the virtues of C.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/rusty-c/">&lt;p&gt;I&#x27;m pretty happy that I don&#x27;t have to go into lab tomorrow.. well, today.. extolling the virtues of C.&lt;&#x2F;p&gt;
 &lt;p&gt;The core concept behind 15-440&#x27;s project 1 (implement RPC) is very simple. Hijack those function calls, pack everything into a box, ship them to your server, get the results back, apply them locally and you&#x27;re done! The handout says as much.&lt;&#x2F;p&gt;
 &lt;p&gt;But the devil is in the details, and so I&#x27;ve just spent the better part of my weekend wrangling with C and string processing. In retrospect, my initial JSON parser idea would have been easier to formally specify and test, and I regret not implementing it. I&#x27;m not looking forward to recursive data structures either, with my current iteration of &amp;quot;let&#x27;s reinvent CSV&amp;quot; that everybody goes through now and then.&lt;&#x2F;p&gt;
 &lt;p&gt;It&#x27;s especially painful coding in C when you &lt;em&gt;know&lt;&#x2F;em&gt; that all these memory errors would have been compile time checked at Rust. Sure, Rust crates are a little young, but I did lose a day to &lt;strong&gt;valgrind&lt;&#x2F;strong&gt; somehow reassigning my assigned-exactly-once file descriptor. I&#x27;m fairly sure I&#x27;ve ruled out overflow, so I still have no idea why it does that - a question for another day. Well, you never really appreciate languages until you see the salvation they offer. I still wonder how much easier this project would have been during the Fall in Go, though.&lt;&#x2F;p&gt;
@@ -2741,13 +3119,19 @@ And to get the second row of the result,
         <title>Spring 2018 resolutions</title>
         <published>2018-01-12T00:00:00+00:00</published>
         <updated>2018-01-12T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/spring-2018-resolutions/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/spring-2018-resolutions/"/>
         <id>https://wanshenl.me/blog/archive/spring-2018-resolutions/</id>
         
-        <content type="html">&lt;p&gt;I&#x27;ve been spending winter break attending a few (mostly programming-oriented) &lt;a href=&quot;https:&#x2F;&#x2F;www.meetup.com&#x2F;cities&#x2F;us&#x2F;pa&#x2F;pittsburgh&#x2F;&quot;&gt;meetups&lt;&#x2F;a&gt;. CMU is actually pretty good background preparation here. But I digress.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/spring-2018-resolutions/">&lt;p&gt;I&#x27;ve been spending winter break attending a few (mostly programming-oriented) &lt;a href=&quot;https:&#x2F;&#x2F;www.meetup.com&#x2F;cities&#x2F;us&#x2F;pa&#x2F;pittsburgh&#x2F;&quot;&gt;meetups&lt;&#x2F;a&gt;. CMU is actually pretty good background preparation here. But I digress.&lt;&#x2F;p&gt;
 &lt;p&gt;Reviewing the semesters I&#x27;ve had so far, I realize quality of life (as measured by sleep) has generally been on a downwards slide.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Fall 2016
@@ -2838,13 +3222,19 @@ And to get the second row of the result,
         <title>Defeating &quot;web security&quot; in Singapore</title>
         <published>2018-01-01T00:00:00+00:00</published>
         <updated>2018-01-01T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/singapore-web-security/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/singapore-web-security/"/>
         <id>https://wanshenl.me/blog/archive/singapore-web-security/</id>
         
-        <content type="html">&lt;p&gt;Considering that cybersecurity and PPP were large factors in choosing computer science and CMU respectively, I&#x27;ve done very little of both ever since I got here. Too many distractions, too much emphasis on classes.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/singapore-web-security/">&lt;p&gt;Considering that cybersecurity and PPP were large factors in choosing computer science and CMU respectively, I&#x27;ve done very little of both ever since I got here. Too many distractions, too much emphasis on classes.&lt;&#x2F;p&gt;
 &lt;p&gt;Hopefully, that will change. Trying to free up Fridays... though I&#x27;ve forgotten everything.&lt;&#x2F;p&gt;
 &lt;p&gt;I also recall griping about the apparent lack of cybersecurity core classes in NUS; this was after a NUS STePS mini-CTF which someone from my high school won. Well, CMU is the same - I&#x27;m mostly done with the core, and it appears that you can graduate with memories of &amp;quot;oh yeah bomblab and attacklab I vaguely remember those&amp;quot; as the extent of your security knowledge.&lt;&#x2F;p&gt;
 &lt;p&gt;Sure, CS education and job training aren&#x27;t exactly the same thing, but the goal of becoming a well-paid code monkey seems to be fairly common, so perhaps writing secure code should be stressed a little more? But I digress.&lt;&#x2F;p&gt;
@@ -2971,13 +3361,19 @@ And to get the second row of the result,
         <title>Great Practical Ideas in Chicken Farming</title>
         <published>2017-07-31T00:00:00+00:00</published>
         <updated>2019-05-20T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/gpi-chicken-farming/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/gpi-chicken-farming/"/>
         <id>https://wanshenl.me/blog/archive/gpi-chicken-farming/</id>
         
-        <content type="html">&lt;p&gt;So summer is ending and I&#x27;m not sure when I&#x27;ll actively be involved in chicken farming again. This keeps track of some of the better ideas that we&#x27;ve had over the years.&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/gpi-chicken-farming/">&lt;p&gt;So summer is ending and I&#x27;m not sure when I&#x27;ll actively be involved in chicken farming again. This keeps track of some of the better ideas that we&#x27;ve had over the years.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;useful-things&quot;&gt;Useful Things&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;automatic-chicken-waterer&quot;&gt;Automatic Chicken Waterer&lt;&#x2F;h2&gt;
 &lt;p&gt;A toilet fill valve in a bucket works unreasonably well.&lt;&#x2F;p&gt;
@@ -3145,13 +3541,19 @@ And to get the second row of the result,
         <title>CMU Quickstart</title>
         <published>2017-07-15T00:00:00+00:00</published>
         <updated>2017-07-15T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://wanshenl.me/blog/archive/cmu-quickstart/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/cmu-quickstart/"/>
         <id>https://wanshenl.me/blog/archive/cmu-quickstart/</id>
         
-        <content type="html">&lt;p&gt;&lt;em&gt;A mix of questions which I asked and answered prior to coming to CMU. Written informally for a Singaporean high school perspective.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/cmu-quickstart/">&lt;p&gt;&lt;em&gt;A mix of questions which I asked and answered prior to coming to CMU. Written informally for a Singaporean high school perspective.&lt;&#x2F;em&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Admitted to CMU? Welcome!&lt;&#x2F;p&gt;
 &lt;p&gt;&lt;strong&gt;You should bookmark the Important Dates page that they gave you.&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Particularly important deadlines (might be outdated):&lt;&#x2F;p&gt;
