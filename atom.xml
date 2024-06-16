@@ -4,10 +4,79 @@
     <link rel="self" type="application/atom+xml" href="https://wanshenl.me/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://wanshenl.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-11-18T00:00:00+00:00</updated>
+    <updated>2024-06-15T00:00:00+00:00</updated>
     <id>https://wanshenl.me/atom.xml</id>
     <entry xml:lang="en-us">
-        <title>Inaction</title>
+        <title>Maslow</title>
+        <published>2024-06-15T00:00:00+00:00</published>
+        <updated>2024-06-15T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/maslow/"/>
+        <id>https://wanshenl.me/blog/maslow/</id>
+        
+        <content type="html" xml:base="https://wanshenl.me/blog/maslow/">&lt;p&gt;I&#x27;m back at MSR for another summer!
+Between work, friends, and overall life, I&#x27;m incredibly content right now.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;It is difficult for me to describe how much I enjoy MSR to people who are not into research.
+The high baseline level of knowledge and shared background makes it easy to communicate ideas,
+and it&#x27;s great to be around people who actually like their job.&lt;&#x2F;p&gt;
+&lt;p&gt;For example, recently, some of us interns got dinner together and left work &amp;quot;early&amp;quot;
+(aka on time for a regular job, around 5pm).
+After dinner, I was considering going home.
+However, another intern was going to go back to the office and asked if anyone was coming along,
+so we went back together and stayed until 9 or so.&lt;&#x2F;p&gt;
+&lt;p&gt;And in general, I admire the people that I&#x27;ve met here.
+Many of them have spent decades in database research, and they still have it in them:
+their thinking is sharp, precise, and tuned towards identifying research problems that matter.
+I learn something new from most meetings; there is &lt;em&gt;immense&lt;&#x2F;em&gt; value in reflecting on the questions
+that they ask and the directions that they suggest.&lt;&#x2F;p&gt;
+&lt;p&gt;This is the only work environment that has made me somewhat waver,
+as far as staying long-term in Brunei goes.
+If I am given the opportunity to make a significant impact on computing education and practice,
+and I do, then it is still likely that I would make my continued peace with staying in Brunei.
+But the potential for self-actualization here is incredibly tempting.
+Well, we will see.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Last summer, I was trying to balance phd work and summer work at the same time.
+Wake up, 6-8 phd, 9-7 work, 9-12 phd, sleep.
+It was exhausting, largely because I was struggling to get research wins in both.
+I eventually switched off the phd work to focus on summer work alone,
+but it left a lasting sense of burnout.&lt;&#x2F;p&gt;
+&lt;p&gt;This summer, I&#x27;m just waiting for revision feedback that in theory comes today.
+(And my genuine gratitude to reviewer 3 for eliminating many insecurities,
+come whatever may of the overall paper&#x27;s status-- but that&#x27;s another topic for another day).
+So I go to work, focus for a few hours, have lunch, and then work until 6 (if I&#x27;m grabbing dinner
+with friends) or 8 (if I&#x27;m not).
+This still leaves a few hours of other random things when I get home, thanks to my current old age
+problem of waking up after 6 hours.&lt;&#x2F;p&gt;
+&lt;p&gt;This is possibly the healthiest work-life balance that I&#x27;ve ever had.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Because I&#x27;m only working on work,
+I&#x27;ve found a lot more time to enjoy work and hang out with friends.
+Many old memories are resurfacing this summer.
+I&#x27;ve opened up to relatively few people in the US, and a majority of those people are here.&lt;&#x2F;p&gt;
+&lt;p&gt;I had always thought that given the choice of any country in the world to live in,
+Singapore would win uncontested: many of my closest friends are there,
+there is reasonably good governance, the country appeals to me.&lt;&#x2F;p&gt;
+&lt;p&gt;But I&#x27;m starting to realize that Seattle is a strong contender too.
+There is nothing quite like it for database-related work.
+There&#x27;s city life in west and nature in the east.
+A good number of close friends are based nearby.&lt;&#x2F;p&gt;
+&lt;p&gt;In another life, I could see myself happily living here.
+In any case, eight more weeks!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en-us">
+        <title>Not Doing</title>
         <published>2023-11-18T00:00:00+00:00</published>
         <updated>2023-11-18T00:00:00+00:00</updated>
         
@@ -19,10 +88,10 @@
           </name>
         </author>
         
-        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/inaction/"/>
-        <id>https://wanshenl.me/blog/inaction/</id>
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/archive/not-doing/"/>
+        <id>https://wanshenl.me/blog/archive/not-doing/</id>
         
-        <content type="html" xml:base="https://wanshenl.me/blog/inaction/">&lt;blockquote&gt;
+        <content type="html" xml:base="https://wanshenl.me/blog/archive/not-doing/">&lt;blockquote&gt;
 &lt;p&gt;Not exalting the gifted prevents quarreling.&lt;br &#x2F;&gt;
 Not collecting treasures prevents stealing.&lt;br &#x2F;&gt;
 Not seeing desirable things prevents confusion of the heart.&lt;&#x2F;p&gt;
