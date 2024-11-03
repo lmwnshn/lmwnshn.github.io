@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1"> <!-- For mobile sizing. -->
+  <meta name="generator" content="zola v0.13.0"><!-- Credit where credit is due. -->
+
+  <!-- SEO:START -->
+
+    <!-- Beep boop. -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Generic. -->
+    
+    
+    
+      
+      
+    
+    <meta itemprop="name" content="Databases">
+    <meta itemprop="description" content="Personal website of Wan Shen Lim. Currently PhD CS at Carnegie Mellon.">
+
+    <!-- Facebook. -->
+    <meta property="og:title" content="Databases">
+    <meta property="og:description" content="Personal website of Wan Shen Lim. Currently PhD CS at Carnegie Mellon.">
+    <meta property="og:url" content="https:&#x2F;&#x2F;wanshenl.me&#x2F;useful&#x2F;databases&#x2F;">
+    
+      <meta property="og:type" content="website">
+    
+
+    <!-- Twitter. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lmwnshn">
+    <meta name="twitter:creator" content="@lmwnshn">
+    <meta name="twitter:title" content="Databases">
+    <meta name="twitter:description" content="Personal website of Wan Shen Lim. Currently PhD CS at Carnegie Mellon.">
+
+    <!-- Page specific. https://schema.org/BlogPosting -->
+    
+      <meta itemprop="dateCreated" content="">
+      <meta itemprop="datePublished" content="">
+      <meta itemprop="dateModified" content="">
+      <meta itemprop="wordCount" content="875">
+      <meta itemprop="timeRequired" content="PT5M">
+    
+
+  <!-- SEO:END -->
+
+  <link rel="stylesheet" href="/css/tachyons.4.12.0.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
+  
+
+  <!-- Google. -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4461ZGVK5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4461ZGVK5R');
+  </script>
+
+  
+    <title>Databases | Beep Boop</title>
+  
+</head>
+
+<body class="ma0 bg-near-white avenir">
+  <!-- Site header. -->
+  <header>
+    <div>
+      <nav class="pv3 ph2" role="navigation">
+        <div class="flex justify-center">
+          <div class="bb b--light-blue flex items-center pb1">
+            <div><img class="pr3" src="/images/creatures/logo_creature_square.png" alt="Site logo." width="70px" height="70px"/></div>
+            <div class="flex flex-column pl2">
+              <a href="https:&#x2F;&#x2F;wanshenl.me" class="f3 fw2 hover-blue no-underline black-90 nb3">Beep Boop</a>
+              <div class="black-60 pt3">Wan Shen Lim, a PhD student at Carnegie Mellon SCS</div>
+              <span class="black-60 pt1">BSCS CMU 2020 | Pittsburgh | Brunei</span>
+            </div>
+            <div class="flex pl4-ns pr2-ns"><a class="f4 fw2 hover-blue no-underline black-90" href="/" title="Home">Home</a></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Site content. -->
+  <section>
+    <div class="container">
+      <main class="pb7" role="main">
+        <article class="flex flex-column center justify-center items-center ph4 mw8">
+          <div class="nested-copy-line-height lh-copy serif nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+            
+  <h1 class="title">Databases</h1>
+  
+
+  
+    <div class=" -ns ba pa2 ml3 bw1 b--black-10 bg-washed-red">
+      <div><b>Table of Contents</b></div>
+      <div>
+        <ul class="list pl0">
+          
+            <li><a class="link" href="https://wanshenl.me/useful/databases/#async-io">Async IO</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#lord-of-the-io-uring-io-uring-tutorial-link">Lord of the io_uring : io_uring tutorial. Link.</a></li>
+              
+              </ul>
+            
+          
+            <li><a class="link" href="https://wanshenl.me/useful/databases/#code-style">Code style</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#redis-the-different-types-of-code-comments-link">Redis : The different types of code comments. Link.</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#personal-notes">Personal notes.</a></li>
+              
+              </ul>
+            
+          
+            <li><a class="link" href="https://wanshenl.me/useful/databases/#cppcon">CppCon</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#2018-nir-understanding-optimizers-helping-the-compiler-help-you-link">2018 Nir Understanding Optimizers: Helping the Compiler Help You. Link.</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#2019-andrei-speed-is-found-in-the-minds-of-people-link">2019 Andrei Speed is Found in the Minds of People. Link.</a></li>
+              
+              </ul>
+            
+          
+            <li><a class="link" href="https://wanshenl.me/useful/databases/#networking">Networking</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#beej-socket-programming-guide-link">Beej : Socket programming guide. Link.</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#l5rdma-sockets-are-meh-paper-slides">L5RDMA : Sockets are meh. Paper, Slides.</a></li>
+              
+              </ul>
+            
+          
+            <li><a class="link" href="https://wanshenl.me/useful/databases/#performance">Performance</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#sled-great-benchmarking-overview-and-experiment-checklist-link">sled : Great benchmarking overview and experiment checklist. Link.</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#speice-great-list-of-resources-that-emphasizes-variance-over-mean-link">speice : Great list of resources that emphasizes variance over mean. Link.</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/databases/#sysbench-machine-tuning-tips-from-sysbench-maintainer-link">sysbench : Machine tuning tips from sysbench maintainer. Link.</a></li>
+              
+              </ul>
+            
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <!-- This is a horrible hack to prettify links. -->
+  <p>Keeping track of useful things that I've read or watched.</p>
+<p>Useful in the sense of "I can use this for databases".</p>
+<h2 id="async-io">Async IO</h2>
+<h3 id="lord-of-the-io-uring-io-uring-tutorial-link">Lord of the <code>io_uring</code> : <code>io_uring</code> tutorial. <a class="link" href="https://unixism.net/loti/">Link</a>.</h3>
+<ul>
+<li>Key idea: avoid syscall and user/kernel copy overhead with shared ring buffers.</li>
+<li><code>io_uring</code> shares two ring buffers (submission queue SQ, completion queue CQ) between kernel and user space.</li>
+<li>Submissions can be batched before a notify (<code>io_uring_enter</code>); the kernel can poll the SQ directly to avoid submission overhead for high frequency submissions.</li>
+<li>Completions are added to CQ by kernel (1:1 submissions:completions, tagged with identifier) in no particular guaranteed order.</li>
+<li>Most applications should just use <code>liburing</code>, but that requires kernel 5.6+. Ubuntu 20.04 LTS only ships 5.4.</li>
+</ul>
+<h2 id="code-style">Code style</h2>
+<h3 id="redis-the-different-types-of-code-comments-link">Redis : The different types of code comments. <a class="link" href="http://antirez.com/news/124">Link</a>.</h3>
+<ul>
+<li>Key idea: function, design, why, teacher, checklist, guide, comments are useful. Specifically, "what" comments are not necessarily harmful.</li>
+<li>Excellent example comments.</li>
+</ul>
+<h3 id="personal-notes">Personal notes.</h3>
+<ul>
+<li>Give a component a DescriptiveName. Use DescriptiveName to refer to DescriptiveName even if repetitive.</li>
+<li>Words to be banned or strongly reconsidered prior to use:
+<ul>
+<li>Too much potential for ambiguity, allows for too much sloppiness in coding: this, that, it.</li>
+<li>Too much potential for run-on sentences: more than two commas, semicolon (make a new sentence instead), any sentence longer than two lines of comments.</li>
+</ul>
+</li>
+<li>Just capitalize and punctuate every sentence. Much better looking.</li>
+</ul>
+<h2 id="cppcon">CppCon</h2>
+<h3 id="2018-nir-understanding-optimizers-helping-the-compiler-help-you-link">2018 Nir Understanding Optimizers: Helping the Compiler Help You. <a class="link" href="https://www.youtube.com/watch?v=8nyq8SNUTSc">Link</a>.</h3>
+<ul>
+<li>Compiler basic block = one entry, MUST run through all the code, one exit.
+<ul>
+<li>Much easier to optimize.</li>
+</ul>
+</li>
+<li>Function inlining.
+<ul>
+<li>Common perception: saves call overhead.</li>
+<li>Real superpower: increase basic block size.</li>
+</ul>
+</li>
+<li>Constant propagation.
+<ul>
+<li>Gotcha: rarely happens across function boundaries.</li>
+<li>e.g., <code>std::find_if</code> won't inline the predicate function at <code>gcc -O2</code>.</li>
+</ul>
+</li>
+<li>Pass by reference.
+<ul>
+<li>Gotcha: it can be a global, e.g. <code>const T &amp;foo</code> where <code>T = bool</code>.</li>
+<li>Now the compiler can't optimize bools into a simple test.</li>
+</ul>
+</li>
+<li>Extracting tests from loops.
+<ul>
+<li>Specializing the loop calling function with <code>&lt;true&gt;</code> and <code>&lt;false&gt;</code>.</li>
+<li>Pay for binary size but little else in many use-cases.</li>
+<li>e.g., if only reading bools on startup.</li>
+</ul>
+</li>
+<li><code>std::variant</code> generates some cursed assembly.</li>
+</ul>
+<h3 id="2019-andrei-speed-is-found-in-the-minds-of-people-link">2019 Andrei Speed is Found in the Minds of People. <a class="link" href="https://www.youtube.com/watch?v=FJJTYQYB1JQ">Link</a>.</h3>
+<ul>
+<li>Quicksort trivia.
+<ul>
+<li><code>small_sort</code> threshold.
+<ul>
+<li>32 on VS, 16 on GNU, 30 on clang for trivial types and 6 otherwise.</li>
+</ul>
+</li>
+<li>Know your metrics.
+<ul>
+<li>Binary search has less comparisons than linear but takes longer.</li>
+<li>Linear search: one fail per search (less info), happy branch predictor.</li>
+<li>Binary search: one bit per search (more info), very sad branch predictor.</li>
+<li>Textbooks and research minimize <code>C(n)</code>, but entropy per comparison
+matters more for performance.</li>
+<li>Sort algorithms are better measured with <code>(C(n)+S(n)+kD(n))/n</code>.</li>
+</ul>
+</li>
+<li>If performance matters, integrate tests with math.
+<ul>
+<li>e.g., <code>right_idx = ... + (size &amp; 1)</code>.</li>
+</ul>
+</li>
+<li>Neat tricks.
+<ul>
+<li>Unguarded insertion sort / presence of sentinel values for speed.
+<ul>
+<li>Reminds me of <a class="link" href="https://lemire.me/blog/2020/09/03/sentinels-can-be-faster/">Lemire's post</a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Good mindset to have.
+<ul>
+<li>But if you stare into the abyss..</li>
+</ul>
+</li>
+</ul>
+<h2 id="networking">Networking</h2>
+<h3 id="beej-socket-programming-guide-link">Beej : Socket programming guide. <a class="link" href="https://beej.us/guide/bgnet/">Link</a>.</h3>
+<h3 id="l5rdma-sockets-are-meh-paper-slides">L5RDMA : Sockets are meh. <a class="link" href="https://db.in.tum.de/~fent/papers/Low-Latency%20Communication%20for%20Fast%20DBMS%20Using%20RDMA%20and%20Shared%20Memory.pdf">Paper</a>, <a class="link" href="https://db.in.tum.de/~fent/papers/Low-Latency%20Slides.pdf?lang=en">Slides</a>.</h3>
+<ul>
+<li>Key idea: Networking has become a performance bottleneck; solve with RDMA/RoCE/shared memory. The paper does a cool bootstrap to the best available network tech.</li>
+<li>Silo: 58k txn/s per second single-threaded (embedded), 1.5k (TCP), 2.7k (domain socket). Networking and IPC are huge bottlenecks!
+<ul>
+<li>Corollary: when investigating claims of high performance we should check: fsync frequency, embedded vs over network.</li>
+</ul>
+</li>
+</ul>
+<h2 id="performance">Performance</h2>
+<h3 id="sled-great-benchmarking-overview-and-experiment-checklist-link">sled : Great benchmarking overview and experiment checklist. <a class="link" href="https://sled.rs/perf.html">Link</a>.</h3>
+<ul>
+<li>P state and turbo boost, see <a class="link" href="https://wanshenl.me/useful/databases/#sysbench-machine-tuning-tips-from-sysbench-maintainer-link">sysbench</a>.</li>
+<li>Drop the pagecache. <code>sync &amp;&amp; echo 3 | sudo tee /proc/sys/vm/drop_caches</code></li>
+<li>Compact system-wide memory. <code>echo 1 | sudo tee /proc/sys/vm/compact_memory</code></li>
+</ul>
+<h3 id="speice-great-list-of-resources-that-emphasizes-variance-over-mean-link">speice : Great list of resources that emphasizes variance over mean. <a class="link" href="https://speice.io/2019/07/high-performance-systems.html">Link</a>.</h3>
+<ul>
+<li>This is one of the best "list of links" resources that I have read.</li>
+<li>"Focus first on reducing performance variance. Only look at average latency
+once variance is at an acceptable level."</li>
+<li>The rest of this blog is pretty high quality too.</li>
+</ul>
+<h3 id="sysbench-machine-tuning-tips-from-sysbench-maintainer-link">sysbench : Machine tuning tips from sysbench maintainer. <a class="link" href="https://www.percona.com/resources/videos/benchmark-noise-reduction-how-configure-your-machines-stable-results">Link</a>.</h3>
+<ul>
+<li>Key idea: "If you are not seeing stable results in your performance comparisons, you are wasting your time".</li>
+<li>CPU frequency:
+<ul>
+<li>Disable higher P states. <code>echo performance | sudo tee /sys/devices/system/cpu/cpu[0-9]*/cpufreq/scaling_governor</code></li>
+<li>Disable higher C states. <code>(echo 0; cat) &gt; /dev/cpu_dma_latency &amp;</code></li>
+<li>Disable turbo boost. <code>echo 1 &gt; /sys/devices/system/cpu/intel_pstate/no_turbo</code></li>
+</ul>
+</li>
+<li>Scheduler: it depends.
+<ul>
+<li>Leave it at CFS.</li>
+<li>Disable autogroup. <code>sysctl kernel.sched_autogroup_enabled=0</code></li>
+<li>Raise minimal granularity. <code>sysctl kernel.sched_min_granularity_ns=5000000</code></li>
+<li>Relevant <a class="link" href="https://www.postgresql.org/message-id/50E4AAB1.9040902@optionshouse.com">Postgres</a> discussion, also suggests tuning <code>sched_migration_cost</code>.</li>
+</ul>
+</li>
+<li>ASLR: Disable. (security risk!) <code>sysctl kernel.randomize_va_space=0</code></li>
+<li>NUMA: Disable autobalance. <code>sysctl kernel.numa_balancing=0</code></li>
+<li>Swap: Minimize. <code>sysctl vm.swappiness=1</code></li>
+<li>THP: Disable. <code>echo never &gt; /sys/kernel/mm/transparent_hugepage/enabled</code> and <code>echo never &gt; /sys/kernel/mm/transparent_hugepage/defrag</code>.</li>
+<li>Memory allocator: Keep consistent version between benchmarks.</li>
+<li>Spectre/meltdown: Keep mitigations similar between benchmarks.</li>
+</ul>
+
+
+          </div>
+        </article>
+      </main>
+    </div>
+  </section>
+
+  <!-- Social media buttons. Taken from Hugo's Ananke. -->
+  <footer class="bottom-0 w-100 pa1" role="contentinfo">
+    <div class="flex-column justify-center">
+      <div class="flex justify-center items-center pb2">
+      <a href="https://facebook.com/lmwnshn" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;" /></svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      <a href="https://twitter.com/lmwnshn" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" /></svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      <a href="https://linkedin.com/in/lmwnshn" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      <a href="https://github.com/lmwnshn" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z" />
+      </svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      </div>
+    <div class="tc pa1 black-60 f6">Made with <a class="hover-blue no-underline black-90" href="https://www.getzola.org/">Zola</a>, a Rust SSG.</div>
+    </div>
+  </footer>
+</body>
+
+</html>
