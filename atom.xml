@@ -4,8 +4,33 @@
     <link rel="self" type="application/atom+xml" href="https://wanshenl.me/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://wanshenl.me"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-11-03T00:00:00+00:00</updated>
+    <updated>2024-11-06T00:00:00+00:00</updated>
     <id>https://wanshenl.me/atom.xml</id>
+    <entry xml:lang="en-us">
+        <title>Welp.</title>
+        <published>2024-11-06T00:00:00+00:00</published>
+        <updated>2024-11-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://wanshenl.me/blog/welp/"/>
+        <id>https://wanshenl.me/blog/welp/</id>
+        
+        <content type="html" xml:base="https://wanshenl.me/blog/welp/">&lt;p&gt;I applied here for undergrad because I really admired this country&#x27;s ideals, back in 2014 or so.
+Until today, I was open to the idea of coming back in the future for the sake of a future partner
+and&#x2F;or kids.
+But well, regardless of who ends up being in charge, the results say enough about this society
+that I think I should look elsewhere.&lt;&#x2F;p&gt;
+&lt;p&gt;Time to graduate.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en-us">
         <title>Kaguya</title>
         <published>2024-11-03T00:00:00+00:00</published>
