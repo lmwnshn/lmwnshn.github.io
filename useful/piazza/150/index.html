@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,minimum-scale=1"> <!-- For mobile sizing. -->
+  <meta name="generator" content="zola v0.13.0"><!-- Credit where credit is due. -->
+
+  <!-- SEO:START -->
+
+    <!-- Beep boop. -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Generic. -->
+    
+    
+    
+      
+      
+    
+    <meta itemprop="name" content="150 Piazza">
+    <meta itemprop="description" content="Some questions from 150 Piazza.">
+
+    <!-- Facebook. -->
+    <meta property="og:title" content="150 Piazza">
+    <meta property="og:description" content="Some questions from 150 Piazza.">
+    <meta property="og:url" content="https:&#x2F;&#x2F;wanshenl.me&#x2F;useful&#x2F;piazza&#x2F;150&#x2F;">
+    
+      <meta property="og:type" content="website">
+    
+
+    <!-- Twitter. -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lmwnshn">
+    <meta name="twitter:creator" content="@lmwnshn">
+    <meta name="twitter:title" content="150 Piazza">
+    <meta name="twitter:description" content="Some questions from 150 Piazza.">
+
+    <!-- Page specific. https://schema.org/BlogPosting -->
+    
+      <meta itemprop="dateCreated" content="">
+      <meta itemprop="datePublished" content="">
+      <meta itemprop="dateModified" content="2018-05-31">
+      <meta itemprop="wordCount" content="902">
+      <meta itemprop="timeRequired" content="PT5M">
+    
+
+  <!-- SEO:END -->
+
+  <link rel="stylesheet" href="/css/tachyons.4.12.0.min.css">
+  <link rel="stylesheet" href="/css/custom.css">
+
+  
+
+  <!-- Google. -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4461ZGVK5R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4461ZGVK5R');
+  </script>
+
+  
+    <title>150 Piazza | Beep Boop</title>
+  
+</head>
+
+<body class="ma0 bg-near-white avenir">
+  <!-- Site header. -->
+  <header>
+    <div>
+      <nav class="pv3 ph2" role="navigation">
+        <div class="flex justify-center">
+          <div class="bb b--light-blue flex items-center pb1">
+            <div><img class="pr3" src="/images/creatures/logo_creature_square.png" alt="Site logo." width="70px" height="70px"/></div>
+            <div class="flex flex-column pl2">
+              <a href="https:&#x2F;&#x2F;wanshenl.me" class="f3 fw2 hover-blue no-underline black-90 nb3">Beep Boop</a>
+              <div class="black-60 pt3">Wan Shen Lim, a PhD student at Carnegie Mellon SCS</div>
+              <span class="black-60 pt1">BSCS CMU 2020 | Pittsburgh | Brunei</span>
+            </div>
+            <div class="flex pl4-ns pr2-ns"><a class="f4 fw2 hover-blue no-underline black-90" href="/" title="Home">Home</a></div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Site content. -->
+  <section>
+    <div class="container">
+      <main class="pb7" role="main">
+        <article class="flex flex-column center justify-center items-center ph4 mw8">
+          <div class="nested-copy-line-height lh-copy serif nested-links nested-img mid-gray pr4-l w-two-thirds-l">
+            
+  <h1 class="title">150 Piazza</h1>
+  
+  <div class="flex-column bb bw1 b--black-10 mb3">
+    
+      <div class="f5">Some questions from 150 Piazza.</div>
+    
+    
+    
+      <div class="subtitle black-80 f5">Last modified: 2018-05-31</div>
+    
+  </div>
+  
+
+  
+    <div class=" -ns ba pa2 ml3 bw1 b--black-10 bg-washed-red">
+      <div><b>Table of Contents</b></div>
+      <div>
+        <ul class="list pl0">
+          
+            <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#continuation-passing-style-cps">Continuation-passing style (CPS)</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#is-this-function-cps">Is this function CPS?</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#factcps-renaming-in-traces-for-clarity">factCPS - renaming in traces for clarity</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#searchpath-cps-trace">searchPath CPS trace</a></li>
+              
+                <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#mutual-recursion-in-stream-tabulate">Mutual recursion in Stream.tabulate</a></li>
+              
+              </ul>
+            
+          
+            <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#alpha-beta">Alpha-Beta</a></li>
+            
+              <ul class="list pl4">
+              
+                <li><a class="link" href="https://wanshenl.me/useful/piazza/150/#alpha-beta-hack-for-exam-speed">Alpha-Beta hack for exam speed</a></li>
+              
+              </ul>
+            
+          
+        </ul>
+      </div>
+    </div>
+  
+
+  <!-- This is a horrible hack to prettify links. -->
+  <h2 id="continuation-passing-style-cps">Continuation-passing style (CPS)</h2>
+<p>Various questions related to continuation-passing style.</p>
+<hr />
+<h3 id="is-this-function-cps">Is this function CPS?</h3>
+<p>If it helps to think about CPS, I like drawing a "where does the computer go" picture.</p>
+<p><img src="https://wanshenl.me/useful/piazza/150/./150cps-fact1.png" alt="fact1" /></p>
+<p>In CPS: only forward! never back!</p>
+<p><img src="https://wanshenl.me/useful/piazza/150/./150cps-fact2.png" alt="fact2" /></p>
+<p>Draw out where your function is going and if your arrows are all pointing forward you’re probably fine, CPS-wise.</p>
+<hr />
+<h3 id="factcps-renaming-in-traces-for-clarity">factCPS - renaming in traces for clarity</h3>
+<p><strong>Original trace by Jacob</strong></p>
+<p>Given the following <code>factCPS</code> function,</p>
+<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>(* factCPS : int -&gt; (int -&gt; &#39;a) -&gt; &#39;a
+</span><span> * REQUIRES: n&gt;=0
+</span><span> * ENSURES: factCPS n s == s(n!)
+</span><span> *)
+</span><span>fun factCPS 0 s = s 1
+</span><span>  | factCPS n s = factCPS (n-1) (fn res =&gt; s(n*res))
+</span></code></pre>
+<p>Jacob wrote a trace for <code>factCPS 3 s</code></p>
+<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>factCPS 3 s
+</span><span>  ==&gt; factCPS 2 (fn res =&gt; s(3*res))
+</span><span>  ==&gt; factCPS 1 (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;))
+</span><span>  ==&gt; factCPS 0 (fn res&#39;&#39; =&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * res&#39;&#39;))
+</span><span>  ==&gt; (fn res&#39;&#39; =&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * res&#39;&#39;)) (1)
+</span><span>  ==&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * 1)
+</span><span>  ==&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) 1
+</span><span>  ==&gt; (fn res =&gt; s(3*res)) (2 * 1)
+</span><span>  ==&gt; (fn res =&gt; s(3*res)) 2
+</span><span>  ==&gt; s(3*2)
+</span><span>  ==&gt; s(6)
+</span></code></pre>
+<p><strong>Renaming suggestion</strong></p>
+<p>You can also rewrite it in this way, which clearly exposes a pattern and helps you keep track of continuations.</p>
+<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>factCPS 3 s                                 s0 = s
+</span><span>  ==&gt; factCPS 2 (fn res =&gt; s0 (3*res))      s1 = (fn res =&gt; s0 (3*res))
+</span><span>  ==&gt; factCPS 1 (fn res =&gt; s1 (2*res))      s2 = (fn res =&gt; s1 (2*res))
+</span><span>  ==&gt; factCPS 0 (fn res =&gt; s2 (1*res))      s3 = (fn res =&gt; s2 (1*res))
+</span><span>  ==&gt; s3 1
+</span><span>  ==  (fn res =&gt; s2 (1*res)) 1
+</span><span>  ==&gt; s2 (1*1)
+</span><span>  ==&gt; s2 1
+</span><span>  ==  (fn res =&gt; s1 (2*res)) 1
+</span><span>  ==&gt; s1 (2*1)
+</span><span>  ==&gt; s1 2
+</span><span>  ==  (fn res =&gt; s0 (3*res)) 2
+</span><span>  ==&gt; s0 (3*2)
+</span><span>  ==&gt; s0 6
+</span><span>  ==  s 6
+</span></code></pre>
+<hr />
+<h3 id="searchpath-cps-trace">searchPath CPS trace</h3>
+<p>In lab, someone requested a draft CPS evaluation trace for a slightly more complicated function.</p>
+<p>Some notes:</p>
+<ul>
+<li>You might think that explicitly defining these <code>s1</code> <code>s2</code> <code>k1</code> <code>k2</code> ... is very tedious, but there is usually a very nice pattern to them that helps you avoid mistakes.
+<ul>
+<li><code>s1 = (fn res =&gt; s (LEFT::res))</code></li>
+<li><code>s2 = (fn res =&gt; s1 (LEFT::res))</code></li>
+<li><code>k1 = (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)</code></li>
+<li><code>k2 = (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)</code></li>
+</ul>
+</li>
+<li>Tracing is still very painful. Unless we ask you to trace it, you may want to consider appealing to your intuition. That said, tracing can support and complement your intuition.
+<ul>
+<li>For example, my intuition says you call the failure continuation every time you bounce right.</li>
+<li>And if you know how many layers in you went, you can use this predictable pattern to extract the continuation at any node directly.</li>
+<li>But everyone has different intuition and there’s no one right way of thinking about it</li>
+</ul>
+</li>
+<li>Technically I should show the expansion of <code>p 1</code>, <code>p 2</code>, <code>p 3</code> but I think you all can do that.</li>
+</ul>
+<p>The main thing is to keep track of your changing continuations.</p>
+<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>datatype direction = LEFT | RIGHT
+</span><span>(* searchPath : (&#39;a -&gt; bool) -&gt; &#39;a tree -&gt; (direction list -&gt; &#39;b) -&gt; (unit -&gt; &#39;b) -&gt; &#39;b *)
+</span><span>fun searchPath p Empty s k = k ()
+</span><span>  | searchPath p (Node(L,x,R)) s k = if p x then s [] else
+</span><span>          searchPath p L (fn res =&gt; s(LEFT::res)) (fn () =&gt; searchPath p R (fn res =&gt; s(RIGHT::res)) k)
+</span><span>
+</span><span>
+</span><span>(*
+</span><span>    Let T be the following tree
+</span><span>            1
+</span><span>        2       3
+</span><span>*)
+</span><span>
+</span><span>searchPath (fn x =&gt; x = 3) (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty))) SOME (fn () =&gt; NONE)
+</span><span>
+</span><span>==
+</span><span>
+</span><span>    letting
+</span><span>        p = (fn x =&gt; x = 3)
+</span><span>        T = (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty)))
+</span><span>        s = SOME
+</span><span>        k = (fn () =&gt; NONE)
+</span><span>
+</span><span>    searchPath p T s k
+</span><span>
+</span><span>==
+</span><span>    letting
+</span><span>        from T = (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty)))
+</span><span>            L1 = Node(Empty, 2, Empty)
+</span><span>            x = 1
+</span><span>            R1 = Node(Empty, 3, Empty)
+</span><span>
+</span><span>    if p 1 then s [] else
+</span><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
+</span><span>==
+</span><span>    if false then s [] else
+</span><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
+</span><span>==
+</span><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
+</span><span>==
+</span><span>    searchPath p (Node(Empty, 2, Empty)) (fn res =&gt; s(LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s(RIGHT::res)) k)
+</span><span>==
+</span><span>    letting
+</span><span>        s1 = (fn res =&gt; s(LEFT::res))
+</span><span>        k1 = (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
+</span><span>
+</span><span>    searchPath p (Node(Empty, 2, Empty)) s1 k1
+</span><span>==
+</span><span>    if p 2 then s1 [] else
+</span><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)
+</span><span>==
+</span><span>    if false then s1 [] else
+</span><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1(RIGHT::res)) k1)
+</span><span>==
+</span><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1(RIGHT::res)) k1)
+</span><span>==
+</span><span>    letting
+</span><span>        s2 = (fn res =&gt; s1 (LEFT::res))
+</span><span>        k2 = (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)
+</span><span>
+</span><span>    searchPath p Empty s2 k2
+</span><span>==
+</span><span>    k2 ()
+</span><span>==
+</span><span>    (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1) ()
+</span><span>==
+</span><span>    searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1
+</span><span>==
+</span><span>    k1 ()
+</span><span>==
+</span><span>    (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k) ()
+</span><span>==
+</span><span>    searchPath p R1 (fn res =&gt; s (RIGHT::res)) k
+</span><span>==
+</span><span>    letting
+</span><span>        s3 = (fn res =&gt; s (RIGHT::res))
+</span><span>
+</span><span>    searchPath p (Node(Empty, 3, Empty)) s3 k
+</span><span>==
+</span><span>    if p 3 then s3 [] else
+</span><span>    searchPath p Empty (fn res =&gt; s3 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s3 (RIGHT::res)) k)
+</span><span>==
+</span><span>    if true then s3 [] else
+</span><span>    searchPath p Empty (fn res =&gt; s3 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s3 (RIGHT::res)) k)
+</span><span>==
+</span><span>    s3 []
+</span><span>==
+</span><span>    (fn res =&gt; s (RIGHT::res)) []
+</span><span>==
+</span><span>    s (RIGHT::[])
+</span><span>==
+</span><span>    s [RIGHT]
+</span><span>==
+</span><span>    SOME [RIGHT]
+</span></code></pre>
+<hr />
+<h3 id="mutual-recursion-in-stream-tabulate">Mutual recursion in Stream.tabulate</h3>
+<p>N.B. I personally have issues with my answer to this question, but it appears to have helped people, so well...</p>
+<p><strong>Original question (edited)</strong></p>
+<p>I’m having a little difficulty reasoning about <code>Stream.tabulate</code></p>
+<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>fun tabulate f = delay (fn () =&gt; tabulate&#39; f)
+</span><span>  and tabulate&#39; f = Cons(f(0), tabulate (fn i =&gt; f(i+1)))
+</span></code></pre>
+<p>Why does it feel like it is <code>f(0)</code> <code>f(1)</code> <code>f(1)</code> <code>f(1)</code>... instead of <code>f(0)</code>, <code>f(1)</code>, <code>f(2)</code>, <code>f(3)</code>...? I think I can understand using natural language saying that every time tabulate gets called the <code>i</code> is already increased by one, but I guess I just don’t know how to step through the code?</p>
+<p><strong>Answer (edited)</strong></p>
+<p>Good morning!</p>
+<p>I like to think of our mutually recursive functions as a ping pong ball bouncing around, though I'm not sure that's very relevant here.</p>
+<p>But it's kind of like CPS, where we are modifying the function <code>f</code> each time. So all the <code>tabulate'</code> calls are using different <code>f</code>'s.</p>
+<p>Let’s step through the tabulate!</p>
+<p>If you call <code>tabulate f</code>, your first element is from <code>tabulate' f</code>, which is just <code>f(0)</code>, like you said.</p>
+<p>What will the rest of your elements be?</p>
+<p>It'll be the result of <code>tabulate (different f)</code> where this <code>(different f)</code> is some sneaky looking monkey that will add one to whatever number you give it.</p>
+<p>So in particular, when <code>tabulate (different f)</code> is called, it will end up getting <code>f(1)</code>.</p>
+<p>So far, I think, you are ok until here.</p>
+<p>Now let's think about what you get for the REST of the stream.</p>
+<p>This time, it'll be the result of <code>tabulate (yet another f)</code>, where <code>(yet another f)</code> is some cat that adds one, before passing it to the monkey that adds one.</p>
+<p>You’re wrapping the wrapped function! It might look something like this,</p>
+<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>(fn j =&gt; (fn i =&gt; f (i+1)) (j+1)) (* functions are burritos *)
+</span></code></pre>
+<p>(when working recursively, I personally find it helpful to think of functions as creatures doing things instead of just saying function all the time - sorry if it doesn’t help or made it more confusing)</p>
+<p>In particular, two things that I think may be helpful to highlight:</p>
+<p>I think you accept that we can wrap the <code>f</code> function with <code>(fn i =&gt; f (i+1))</code>. Well, nothing is stopping you from wrapping this wrapper function! So it's like <code>(fn j =&gt; (fn i =&gt; f (i+1)) (j+1))</code>.</p>
+<p>The Cons cells are really just "one element, and something that will give me the rest of the elements". So in particular, each cell only cares about itself and its neighbor. Sure, you can get from the first cell to the 2190821903213th cell, but the first cell is only "directly connected to" the second cell. So there’s no reason that the first cell gets to tell everyone that they have to do <code>f(1)</code>, <code>f(1)</code>, ... and so on. It’s not the same function and not the same <code>i</code>. You only get to tell the person next to you what you want.</p>
+<hr />
+<h2 id="alpha-beta">Alpha-Beta</h2>
+<h3 id="alpha-beta-hack-for-exam-speed">Alpha-Beta hack for exam speed</h3>
+<p><strong>Original 150 alpha-beta table by Jeanne</strong></p>
+<p>150 has an alpha-beta table, courtesy of Jeanne:</p>
+<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>| Player |  v≤α   |  α&lt;v&lt;β   |  v≥β   |
+</span><span>|-------------------------------------|
+</span><span>| Minnie | Prune  | Update β | Ignore |
+</span><span>| Maxie  | Ignore | Update α | Prune  |
+</span></code></pre>
+<p><strong>The hack</strong></p>
+<p>For conceptual understanding, you should rely on the table. But in exam conditions, these two rules produce the same results faster:</p>
+<ul>
+<li>
+<p>no take-backs</p>
+<ul>
+<li>bounds are attached to edges</li>
+<li>write down the bound as you go down the edge</li>
+<li>never modify the bound once you have it written down</li>
+</ul>
+</li>
+<li>
+<p>just update</p>
+<ul>
+<li>maxie always updates left bound as max(left, x)</li>
+<li>minnie always updates right bound as min(right, x)</li>
+<li>if you end up writing an invalid bound like (7,5) or in general (a,b) where a &gt; b then you should have pruned</li>
+</ul>
+</li>
+</ul>
+
+
+          </div>
+        </article>
+      </main>
+    </div>
+  </section>
+
+  <!-- Social media buttons. Taken from Hugo's Ananke. -->
+  <footer class="bottom-0 w-100 pa1" role="contentinfo">
+    <div class="flex-column justify-center">
+      <div class="flex justify-center items-center pb2">
+      <a href="https://facebook.com/lmwnshn" target="_blank" class="link-transition facebook link dib z-999 pt3 pt0-l mr1" title="Facebook link" rel="noopener" aria-label="follow on Facebook——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;" /></svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      <a href="https://twitter.com/lmwnshn" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" /></svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      <a href="https://linkedin.com/in/lmwnshn" target="_blank" class="link-transition linkedin link dib z-999 pt3 pt0-l mr1" title="LinkedIn link" rel="noopener" aria-label="follow on LinkedIn——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      <a href="https://github.com/lmwnshn" target="_blank" class="link-transition github link dib z-999 pt3 pt0-l mr1" title="Github link" rel="noopener" aria-label="follow on Github——Opens in a new window">
+      <svg height="32px" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M256,32C132.3,32,32,134.8,32,261.7c0,101.5,64.2,187.5,153.2,217.9c11.2,2.1,15.3-5,15.3-11.1   c0-5.5-0.2-19.9-0.3-39.1c-62.3,13.9-75.5-30.8-75.5-30.8c-10.2-26.5-24.9-33.6-24.9-33.6c-20.3-14.3,1.5-14,1.5-14   c22.5,1.6,34.3,23.7,34.3,23.7c20,35.1,52.4,25,65.2,19.1c2-14.8,7.8-25,14.2-30.7c-49.7-5.8-102-25.5-102-113.5   c0-25.1,8.7-45.6,23-61.6c-2.3-5.8-10-29.2,2.2-60.8c0,0,18.8-6.2,61.6,23.5c17.9-5.1,37-7.6,56.1-7.7c19,0.1,38.2,2.6,56.1,7.7   c42.8-29.7,61.5-23.5,61.5-23.5c12.2,31.6,4.5,55,2.2,60.8c14.3,16.1,23,36.6,23,61.6c0,88.2-52.4,107.6-102.3,113.3   c8,7.1,15.2,21.1,15.2,42.5c0,30.7-0.3,55.5-0.3,63c0,6.1,4,13.3,15.4,11C415.9,449.1,480,363.1,480,261.7   C480,134.8,379.7,32,256,32z" />
+      </svg>
+      <span class="new-window"><svg height="8px" style="enable-background:new 0 0 1000 1000;" version="1.1" viewBox="0 0 1000 1000" width="8px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+      <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;" />
+      </svg>
+      </span></a>
+      </div>
+    <div class="tc pa1 black-60 f6">Made with <a class="hover-blue no-underline black-90" href="https://www.getzola.org/">Zola</a>, a Rust SSG.</div>
+    </div>
+  </footer>
+</body>
+
+</html>

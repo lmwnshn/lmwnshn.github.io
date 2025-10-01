@@ -1,3 +1,3 @@
 # lmwnshn.github.io
 
-Public site.
+Public site powered by [Zola](https://www.getzola.org).
