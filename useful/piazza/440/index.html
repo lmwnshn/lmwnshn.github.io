@@ -130,36 +130,34 @@
   <h2 id="go-scheduler-randomness-or-lack-thereof">Go scheduler randomness (or lack thereof)</h2>
 <p>Disclaimer : I was not a TA and also not a student in this version of the class. I was just hanging around the 440 Piazza and found this question interesting.</p>
 <p><strong>Original question: about the order of output in an example</strong></p>
-<pre data-lang="go" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#72ab00;">package </span><span style="color:#5597d6;">main
-</span><span>
-</span><span style="color:#72ab00;">import </span><span style="color:#d07711;">&quot;fmt&quot;
-</span><span>
-</span><span style="color:#668f14;">func </span><span style="color:#c23f31;">sum</span><span>(</span><span style="color:#5597d6;">s </span><span>[]</span><span style="color:#a2a001;">int</span><span>, </span><span style="color:#5597d6;">c </span><span style="color:#668f14;">chan </span><span style="color:#a2a001;">int</span><span>) {
-</span><span>   </span><span style="color:#5597d6;">sum </span><span style="color:#72ab00;">:= </span><span style="color:#b3933a;">0
-</span><span>   </span><span style="color:#72ab00;">for </span><span style="color:#5597d6;">_</span><span>, </span><span style="color:#5597d6;">v </span><span style="color:#72ab00;">:= range </span><span style="color:#5597d6;">s </span><span>{
-</span><span>      </span><span style="color:#5597d6;">sum </span><span style="color:#72ab00;">+= </span><span style="color:#5597d6;">v
-</span><span>   }
-</span><span>   </span><span style="color:#5597d6;">c </span><span style="color:#72ab00;">&lt;- </span><span style="color:#5597d6;">sum
-</span><span>}
-</span><span>
-</span><span style="color:#668f14;">func </span><span style="color:#c23f31;">main</span><span>() {
-</span><span>   </span><span style="color:#5597d6;">s </span><span style="color:#72ab00;">:= </span><span>[]</span><span style="color:#a2a001;">int</span><span>{</span><span style="color:#b3933a;">7</span><span>, </span><span style="color:#b3933a;">2</span><span>, </span><span style="color:#b3933a;">8</span><span>, </span><span style="color:#72ab00;">-</span><span style="color:#b3933a;">9</span><span>, </span><span style="color:#b3933a;">4</span><span>, </span><span style="color:#b3933a;">0</span><span>}
-</span><span>
-</span><span>   </span><span style="color:#5597d6;">c </span><span style="color:#72ab00;">:= </span><span style="color:#b39f04;">make</span><span>(</span><span style="color:#668f14;">chan </span><span style="color:#a2a001;">int</span><span>)
-</span><span>   </span><span style="color:#72ab00;">go </span><span style="color:#5597d6;">sum</span><span>(</span><span style="color:#5597d6;">s</span><span>[:</span><span style="color:#b39f04;">len</span><span>(</span><span style="color:#5597d6;">s</span><span>)</span><span style="color:#72ab00;">/</span><span style="color:#b3933a;">2</span><span>], </span><span style="color:#5597d6;">c</span><span>)
-</span><span>   </span><span style="color:#72ab00;">go </span><span style="color:#5597d6;">sum</span><span>(</span><span style="color:#5597d6;">s</span><span>[</span><span style="color:#b39f04;">len</span><span>(</span><span style="color:#5597d6;">s</span><span>)</span><span style="color:#72ab00;">/</span><span style="color:#b3933a;">2</span><span>:], </span><span style="color:#5597d6;">c</span><span>)
-</span><span>   </span><span style="color:#5597d6;">x</span><span>, </span><span style="color:#5597d6;">y </span><span style="color:#72ab00;">:= &lt;-</span><span style="color:#5597d6;">c</span><span>, </span><span style="color:#72ab00;">&lt;-</span><span style="color:#5597d6;">c
-</span><span>
-</span><span>   </span><span style="color:#5597d6;">fmt</span><span>.</span><span style="color:#5597d6;">Println</span><span>(</span><span style="color:#5597d6;">x</span><span>, </span><span style="color:#5597d6;">y</span><span>, </span><span style="color:#5597d6;">x</span><span style="color:#72ab00;">+</span><span style="color:#5597d6;">y</span><span>)
-</span><span>}
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="go"><span class="giallo-l"><span style="color: #D73A49;">package</span><span style="color: #6F42C1;"> main</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #D73A49;">import</span><span style="color: #032F62;"> &quot;</span><span style="color: #6F42C1;">fmt</span><span style="color: #032F62;">&quot;</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #D73A49;">func</span><span style="color: #6F42C1;"> sum</span><span>(</span><span style="color: #E36209;">s</span><span> []</span><span style="color: #D73A49;">int</span><span>,</span><span style="color: #E36209;"> c</span><span style="color: #D73A49;"> chan int</span><span>) {</span></span>
+<span class="giallo-l"><span>   sum</span><span style="color: #D73A49;"> :=</span><span style="color: #005CC5;"> 0</span></span>
+<span class="giallo-l"><span style="color: #D73A49;">   for</span><span> _, v</span><span style="color: #D73A49;"> := range</span><span> s {</span></span>
+<span class="giallo-l"><span>      sum</span><span style="color: #D73A49;"> +=</span><span> v</span></span>
+<span class="giallo-l"><span>   }</span></span>
+<span class="giallo-l"><span>   c</span><span style="color: #D73A49;"> &lt;-</span><span> sum</span></span>
+<span class="giallo-l"><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span style="color: #D73A49;">func</span><span style="color: #6F42C1;"> main</span><span>() {</span></span>
+<span class="giallo-l"><span>   s</span><span style="color: #D73A49;"> :=</span><span> []</span><span style="color: #D73A49;">int</span><span>{</span><span style="color: #005CC5;">7</span><span>,</span><span style="color: #005CC5;"> 2</span><span>,</span><span style="color: #005CC5;"> 8</span><span>,</span><span style="color: #D73A49;"> -</span><span style="color: #005CC5;">9</span><span>,</span><span style="color: #005CC5;"> 4</span><span>,</span><span style="color: #005CC5;"> 0</span><span>}</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>   c</span><span style="color: #D73A49;"> :=</span><span style="color: #6F42C1;"> make</span><span>(</span><span style="color: #D73A49;">chan int</span><span>)</span></span>
+<span class="giallo-l"><span style="color: #D73A49;">   go</span><span style="color: #6F42C1;"> sum</span><span>(s[:</span><span style="color: #6F42C1;">len</span><span>(s)</span><span style="color: #D73A49;">/</span><span style="color: #005CC5;">2</span><span>], c)</span></span>
+<span class="giallo-l"><span style="color: #D73A49;">   go</span><span style="color: #6F42C1;"> sum</span><span>(s[</span><span style="color: #6F42C1;">len</span><span>(s)</span><span style="color: #D73A49;">/</span><span style="color: #005CC5;">2</span><span>:], c)</span></span>
+<span class="giallo-l"><span>   x, y</span><span style="color: #D73A49;"> := &lt;-</span><span>c,</span><span style="color: #D73A49;"> &lt;-</span><span>c</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>   fmt.</span><span style="color: #6F42C1;">Println</span><span>(x, y, x</span><span style="color: #D73A49;">+</span><span>y)</span></span>
+<span class="giallo-l"><span>}</span></span></code></pre>
 <p>The output is -5 17 12, why is -5 ahead of 17?</p>
 <p>I thought the order should be random, because the order of calculating 2 threads could be different.</p>
 <h2 id="answer">Answer</h2>
 <p>My understanding is that they are in fact random. Just that for some reason or other, the go example server tends to return <code>-5 17 12</code>.</p>
 <p>If you import time and sleep at the start of the sum function,</p>
-<pre data-lang="go" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-go "><code class="language-go" data-lang="go"><span style="color:#5597d6;">time</span><span>.</span><span style="color:#5597d6;">Sleep</span><span>(</span><span style="color:#b3933a;">1 </span><span style="color:#72ab00;">* </span><span style="color:#5597d6;">time</span><span>.</span><span style="color:#5597d6;">Nanosecond</span><span>)
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="go"><span class="giallo-l"><span>time.</span><span style="color: #6F42C1;">Sleep</span><span>(</span><span style="color: #005CC5;">1</span><span style="color: #D73A49;"> *</span><span> time.Nanosecond)</span></span></code></pre>
 <p>you should see <code>17 -5 12</code> appear sometimes.</p>
 <p>In general, I believe there are no ordering guarantees for calling goroutines in this way.</p>
 <p>(After a followup saying there must be a reason.)</p>

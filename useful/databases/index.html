@@ -19,11 +19,11 @@
       
     
     <meta itemprop="name" content="Databases">
-    <meta itemprop="description" content="Personal website of Wan Shen Lim. Currently PhD CS at Carnegie Mellon.">
+    <meta itemprop="description" content="Personal website of Wan Lim. Currently CTO at OneWill.">
 
     <!-- Facebook. -->
     <meta property="og:title" content="Databases">
-    <meta property="og:description" content="Personal website of Wan Shen Lim. Currently PhD CS at Carnegie Mellon.">
+    <meta property="og:description" content="Personal website of Wan Lim. Currently CTO at OneWill.">
     <meta property="og:url" content="https:&#x2F;&#x2F;wanshenl.me&#x2F;useful&#x2F;databases&#x2F;">
     
       <meta property="og:type" content="website">
@@ -34,7 +34,7 @@
     <meta name="twitter:site" content="@lmwnshn">
     <meta name="twitter:creator" content="@lmwnshn">
     <meta name="twitter:title" content="Databases">
-    <meta name="twitter:description" content="Personal website of Wan Shen Lim. Currently PhD CS at Carnegie Mellon.">
+    <meta name="twitter:description" content="Personal website of Wan Lim. Currently CTO at OneWill.">
 
     <!-- Page specific. https://schema.org/BlogPosting -->
     
@@ -169,7 +169,7 @@
   <p>Keeping track of useful things that I've read or watched.</p>
 <p>Useful in the sense of "I can use this for databases".</p>
 <h2 id="async-io">Async IO</h2>
-<h3 id="lord-of-the-io-uring-io-uring-tutorial-link">Lord of the <code>io_uring</code> : <code>io_uring</code> tutorial. <a class="link" href="https://unixism.net/loti/">Link</a>.</h3>
+<h3 id="lord-of-the-io-uring-io-uring-tutorial-link">Lord of the <code>io_uring</code> : <code>io_uring</code> tutorial. <a rel="external" href="https://unixism.net/loti/">Link</a>.</h3>
 <ul>
 <li>Key idea: avoid syscall and user/kernel copy overhead with shared ring buffers.</li>
 <li><code>io_uring</code> shares two ring buffers (submission queue SQ, completion queue CQ) between kernel and user space.</li>
@@ -178,7 +178,7 @@
 <li>Most applications should just use <code>liburing</code>, but that requires kernel 5.6+. Ubuntu 20.04 LTS only ships 5.4.</li>
 </ul>
 <h2 id="code-style">Code style</h2>
-<h3 id="redis-the-different-types-of-code-comments-link">Redis : The different types of code comments. <a class="link" href="http://antirez.com/news/124">Link</a>.</h3>
+<h3 id="redis-the-different-types-of-code-comments-link">Redis : The different types of code comments. <a rel="external" href="http://antirez.com/news/124">Link</a>.</h3>
 <ul>
 <li>Key idea: function, design, why, teacher, checklist, guide, comments are useful. Specifically, "what" comments are not necessarily harmful.</li>
 <li>Excellent example comments.</li>
@@ -195,7 +195,7 @@
 <li>Just capitalize and punctuate every sentence. Much better looking.</li>
 </ul>
 <h2 id="cppcon">CppCon</h2>
-<h3 id="2018-nir-understanding-optimizers-helping-the-compiler-help-you-link">2018 Nir Understanding Optimizers: Helping the Compiler Help You. <a class="link" href="https://www.youtube.com/watch?v=8nyq8SNUTSc">Link</a>.</h3>
+<h3 id="2018-nir-understanding-optimizers-helping-the-compiler-help-you-link">2018 Nir Understanding Optimizers: Helping the Compiler Help You. <a rel="external" href="https://www.youtube.com/watch?v=8nyq8SNUTSc">Link</a>.</h3>
 <ul>
 <li>Compiler basic block = one entry, MUST run through all the code, one exit.
 <ul>
@@ -229,7 +229,7 @@
 </li>
 <li><code>std::variant</code> generates some cursed assembly.</li>
 </ul>
-<h3 id="2019-andrei-speed-is-found-in-the-minds-of-people-link">2019 Andrei Speed is Found in the Minds of People. <a class="link" href="https://www.youtube.com/watch?v=FJJTYQYB1JQ">Link</a>.</h3>
+<h3 id="2019-andrei-speed-is-found-in-the-minds-of-people-link">2019 Andrei Speed is Found in the Minds of People. <a rel="external" href="https://www.youtube.com/watch?v=FJJTYQYB1JQ">Link</a>.</h3>
 <ul>
 <li>Quicksort trivia.
 <ul>
@@ -257,7 +257,7 @@ matters more for performance.</li>
 <ul>
 <li>Unguarded insertion sort / presence of sentinel values for speed.
 <ul>
-<li>Reminds me of <a class="link" href="https://lemire.me/blog/2020/09/03/sentinels-can-be-faster/">Lemire's post</a>.</li>
+<li>Reminds me of <a rel="external" href="https://lemire.me/blog/2020/09/03/sentinels-can-be-faster/">Lemire's post</a>.</li>
 </ul>
 </li>
 </ul>
@@ -271,8 +271,8 @@ matters more for performance.</li>
 </li>
 </ul>
 <h2 id="networking">Networking</h2>
-<h3 id="beej-socket-programming-guide-link">Beej : Socket programming guide. <a class="link" href="https://beej.us/guide/bgnet/">Link</a>.</h3>
-<h3 id="l5rdma-sockets-are-meh-paper-slides">L5RDMA : Sockets are meh. <a class="link" href="https://db.in.tum.de/~fent/papers/Low-Latency%20Communication%20for%20Fast%20DBMS%20Using%20RDMA%20and%20Shared%20Memory.pdf">Paper</a>, <a class="link" href="https://db.in.tum.de/~fent/papers/Low-Latency%20Slides.pdf?lang=en">Slides</a>.</h3>
+<h3 id="beej-socket-programming-guide-link">Beej : Socket programming guide. <a rel="external" href="https://beej.us/guide/bgnet/">Link</a>.</h3>
+<h3 id="l5rdma-sockets-are-meh-paper-slides">L5RDMA : Sockets are meh. <a rel="external" href="https://db.in.tum.de/~fent/papers/Low-Latency%20Communication%20for%20Fast%20DBMS%20Using%20RDMA%20and%20Shared%20Memory.pdf">Paper</a>, <a rel="external" href="https://db.in.tum.de/~fent/papers/Low-Latency%20Slides.pdf?lang=en">Slides</a>.</h3>
 <ul>
 <li>Key idea: Networking has become a performance bottleneck; solve with RDMA/RoCE/shared memory. The paper does a cool bootstrap to the best available network tech.</li>
 <li>Silo: 58k txn/s per second single-threaded (embedded), 1.5k (TCP), 2.7k (domain socket). Networking and IPC are huge bottlenecks!
@@ -282,20 +282,20 @@ matters more for performance.</li>
 </li>
 </ul>
 <h2 id="performance">Performance</h2>
-<h3 id="sled-great-benchmarking-overview-and-experiment-checklist-link">sled : Great benchmarking overview and experiment checklist. <a class="link" href="https://sled.rs/perf.html">Link</a>.</h3>
+<h3 id="sled-great-benchmarking-overview-and-experiment-checklist-link">sled : Great benchmarking overview and experiment checklist. <a rel="external" href="https://sled.rs/perf.html">Link</a>.</h3>
 <ul>
 <li>P state and turbo boost, see <a class="link" href="https://wanshenl.me/useful/databases/#sysbench-machine-tuning-tips-from-sysbench-maintainer-link">sysbench</a>.</li>
 <li>Drop the pagecache. <code>sync &amp;&amp; echo 3 | sudo tee /proc/sys/vm/drop_caches</code></li>
 <li>Compact system-wide memory. <code>echo 1 | sudo tee /proc/sys/vm/compact_memory</code></li>
 </ul>
-<h3 id="speice-great-list-of-resources-that-emphasizes-variance-over-mean-link">speice : Great list of resources that emphasizes variance over mean. <a class="link" href="https://speice.io/2019/07/high-performance-systems.html">Link</a>.</h3>
+<h3 id="speice-great-list-of-resources-that-emphasizes-variance-over-mean-link">speice : Great list of resources that emphasizes variance over mean. <a rel="external" href="https://speice.io/2019/07/high-performance-systems.html">Link</a>.</h3>
 <ul>
 <li>This is one of the best "list of links" resources that I have read.</li>
 <li>"Focus first on reducing performance variance. Only look at average latency
 once variance is at an acceptable level."</li>
 <li>The rest of this blog is pretty high quality too.</li>
 </ul>
-<h3 id="sysbench-machine-tuning-tips-from-sysbench-maintainer-link">sysbench : Machine tuning tips from sysbench maintainer. <a class="link" href="https://www.percona.com/resources/videos/benchmark-noise-reduction-how-configure-your-machines-stable-results">Link</a>.</h3>
+<h3 id="sysbench-machine-tuning-tips-from-sysbench-maintainer-link">sysbench : Machine tuning tips from sysbench maintainer. <a rel="external" href="https://www.percona.com/resources/videos/benchmark-noise-reduction-how-configure-your-machines-stable-results">Link</a>.</h3>
 <ul>
 <li>Key idea: "If you are not seeing stable results in your performance comparisons, you are wasting your time".</li>
 <li>CPU frequency:
@@ -310,7 +310,7 @@ once variance is at an acceptable level."</li>
 <li>Leave it at CFS.</li>
 <li>Disable autogroup. <code>sysctl kernel.sched_autogroup_enabled=0</code></li>
 <li>Raise minimal granularity. <code>sysctl kernel.sched_min_granularity_ns=5000000</code></li>
-<li>Relevant <a class="link" href="https://www.postgresql.org/message-id/50E4AAB1.9040902@optionshouse.com">Postgres</a> discussion, also suggests tuning <code>sched_migration_cost</code>.</li>
+<li>Relevant <a rel="external" href="https://www.postgresql.org/message-id/50E4AAB1.9040902@optionshouse.com">Postgres</a> discussion, also suggests tuning <code>sched_migration_cost</code>.</li>
 </ul>
 </li>
 <li>ASLR: Disable. (security risk!) <code>sysctl kernel.randomize_va_space=0</code></li>

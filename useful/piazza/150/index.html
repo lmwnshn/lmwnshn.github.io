@@ -158,44 +158,41 @@
 <h3 id="factcps-renaming-in-traces-for-clarity">factCPS - renaming in traces for clarity</h3>
 <p><strong>Original trace by Jacob</strong></p>
 <p>Given the following <code>factCPS</code> function,</p>
-<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>(* factCPS : int -&gt; (int -&gt; &#39;a) -&gt; &#39;a
-</span><span> * REQUIRES: n&gt;=0
-</span><span> * ENSURES: factCPS n s == s(n!)
-</span><span> *)
-</span><span>fun factCPS 0 s = s 1
-</span><span>  | factCPS n s = factCPS (n-1) (fn res =&gt; s(n*res))
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>(* factCPS : int -&gt; (int -&gt; &#39;a) -&gt; &#39;a</span></span>
+<span class="giallo-l"><span> * REQUIRES: n&gt;=0</span></span>
+<span class="giallo-l"><span> * ENSURES: factCPS n s == s(n!)</span></span>
+<span class="giallo-l"><span> *)</span></span>
+<span class="giallo-l"><span>fun factCPS 0 s = s 1</span></span>
+<span class="giallo-l"><span>  | factCPS n s = factCPS (n-1) (fn res =&gt; s(n*res))</span></span></code></pre>
 <p>Jacob wrote a trace for <code>factCPS 3 s</code></p>
-<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>factCPS 3 s
-</span><span>  ==&gt; factCPS 2 (fn res =&gt; s(3*res))
-</span><span>  ==&gt; factCPS 1 (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;))
-</span><span>  ==&gt; factCPS 0 (fn res&#39;&#39; =&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * res&#39;&#39;))
-</span><span>  ==&gt; (fn res&#39;&#39; =&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * res&#39;&#39;)) (1)
-</span><span>  ==&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * 1)
-</span><span>  ==&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) 1
-</span><span>  ==&gt; (fn res =&gt; s(3*res)) (2 * 1)
-</span><span>  ==&gt; (fn res =&gt; s(3*res)) 2
-</span><span>  ==&gt; s(3*2)
-</span><span>  ==&gt; s(6)
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>factCPS 3 s</span></span>
+<span class="giallo-l"><span>  ==&gt; factCPS 2 (fn res =&gt; s(3*res))</span></span>
+<span class="giallo-l"><span>  ==&gt; factCPS 1 (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;))</span></span>
+<span class="giallo-l"><span>  ==&gt; factCPS 0 (fn res&#39;&#39; =&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * res&#39;&#39;))</span></span>
+<span class="giallo-l"><span>  ==&gt; (fn res&#39;&#39; =&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * res&#39;&#39;)) (1)</span></span>
+<span class="giallo-l"><span>  ==&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) (1 * 1)</span></span>
+<span class="giallo-l"><span>  ==&gt; (fn res&#39; =&gt; (fn res =&gt; s(3*res)) (2 * res&#39;)) 1</span></span>
+<span class="giallo-l"><span>  ==&gt; (fn res =&gt; s(3*res)) (2 * 1)</span></span>
+<span class="giallo-l"><span>  ==&gt; (fn res =&gt; s(3*res)) 2</span></span>
+<span class="giallo-l"><span>  ==&gt; s(3*2)</span></span>
+<span class="giallo-l"><span>  ==&gt; s(6)</span></span></code></pre>
 <p><strong>Renaming suggestion</strong></p>
 <p>You can also rewrite it in this way, which clearly exposes a pattern and helps you keep track of continuations.</p>
-<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>factCPS 3 s                                 s0 = s
-</span><span>  ==&gt; factCPS 2 (fn res =&gt; s0 (3*res))      s1 = (fn res =&gt; s0 (3*res))
-</span><span>  ==&gt; factCPS 1 (fn res =&gt; s1 (2*res))      s2 = (fn res =&gt; s1 (2*res))
-</span><span>  ==&gt; factCPS 0 (fn res =&gt; s2 (1*res))      s3 = (fn res =&gt; s2 (1*res))
-</span><span>  ==&gt; s3 1
-</span><span>  ==  (fn res =&gt; s2 (1*res)) 1
-</span><span>  ==&gt; s2 (1*1)
-</span><span>  ==&gt; s2 1
-</span><span>  ==  (fn res =&gt; s1 (2*res)) 1
-</span><span>  ==&gt; s1 (2*1)
-</span><span>  ==&gt; s1 2
-</span><span>  ==  (fn res =&gt; s0 (3*res)) 2
-</span><span>  ==&gt; s0 (3*2)
-</span><span>  ==&gt; s0 6
-</span><span>  ==  s 6
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>factCPS 3 s                                 s0 = s</span></span>
+<span class="giallo-l"><span>  ==&gt; factCPS 2 (fn res =&gt; s0 (3*res))      s1 = (fn res =&gt; s0 (3*res))</span></span>
+<span class="giallo-l"><span>  ==&gt; factCPS 1 (fn res =&gt; s1 (2*res))      s2 = (fn res =&gt; s1 (2*res))</span></span>
+<span class="giallo-l"><span>  ==&gt; factCPS 0 (fn res =&gt; s2 (1*res))      s3 = (fn res =&gt; s2 (1*res))</span></span>
+<span class="giallo-l"><span>  ==&gt; s3 1</span></span>
+<span class="giallo-l"><span>  ==  (fn res =&gt; s2 (1*res)) 1</span></span>
+<span class="giallo-l"><span>  ==&gt; s2 (1*1)</span></span>
+<span class="giallo-l"><span>  ==&gt; s2 1</span></span>
+<span class="giallo-l"><span>  ==  (fn res =&gt; s1 (2*res)) 1</span></span>
+<span class="giallo-l"><span>  ==&gt; s1 (2*1)</span></span>
+<span class="giallo-l"><span>  ==&gt; s1 2</span></span>
+<span class="giallo-l"><span>  ==  (fn res =&gt; s0 (3*res)) 2</span></span>
+<span class="giallo-l"><span>  ==&gt; s0 (3*2)</span></span>
+<span class="giallo-l"><span>  ==&gt; s0 6</span></span>
+<span class="giallo-l"><span>  ==  s 6</span></span></code></pre>
 <hr />
 <h3 id="searchpath-cps-trace">searchPath CPS trace</h3>
 <p>In lab, someone requested a draft CPS evaluation trace for a slightly more complicated function.</p>
@@ -219,109 +216,107 @@
 <li>Technically I should show the expansion of <code>p 1</code>, <code>p 2</code>, <code>p 3</code> but I think you all can do that.</li>
 </ul>
 <p>The main thing is to keep track of your changing continuations.</p>
-<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>datatype direction = LEFT | RIGHT
-</span><span>(* searchPath : (&#39;a -&gt; bool) -&gt; &#39;a tree -&gt; (direction list -&gt; &#39;b) -&gt; (unit -&gt; &#39;b) -&gt; &#39;b *)
-</span><span>fun searchPath p Empty s k = k ()
-</span><span>  | searchPath p (Node(L,x,R)) s k = if p x then s [] else
-</span><span>          searchPath p L (fn res =&gt; s(LEFT::res)) (fn () =&gt; searchPath p R (fn res =&gt; s(RIGHT::res)) k)
-</span><span>
-</span><span>
-</span><span>(*
-</span><span>    Let T be the following tree
-</span><span>            1
-</span><span>        2       3
-</span><span>*)
-</span><span>
-</span><span>searchPath (fn x =&gt; x = 3) (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty))) SOME (fn () =&gt; NONE)
-</span><span>
-</span><span>==
-</span><span>
-</span><span>    letting
-</span><span>        p = (fn x =&gt; x = 3)
-</span><span>        T = (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty)))
-</span><span>        s = SOME
-</span><span>        k = (fn () =&gt; NONE)
-</span><span>
-</span><span>    searchPath p T s k
-</span><span>
-</span><span>==
-</span><span>    letting
-</span><span>        from T = (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty)))
-</span><span>            L1 = Node(Empty, 2, Empty)
-</span><span>            x = 1
-</span><span>            R1 = Node(Empty, 3, Empty)
-</span><span>
-</span><span>    if p 1 then s [] else
-</span><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
-</span><span>==
-</span><span>    if false then s [] else
-</span><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
-</span><span>==
-</span><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
-</span><span>==
-</span><span>    searchPath p (Node(Empty, 2, Empty)) (fn res =&gt; s(LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s(RIGHT::res)) k)
-</span><span>==
-</span><span>    letting
-</span><span>        s1 = (fn res =&gt; s(LEFT::res))
-</span><span>        k1 = (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)
-</span><span>
-</span><span>    searchPath p (Node(Empty, 2, Empty)) s1 k1
-</span><span>==
-</span><span>    if p 2 then s1 [] else
-</span><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)
-</span><span>==
-</span><span>    if false then s1 [] else
-</span><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1(RIGHT::res)) k1)
-</span><span>==
-</span><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1(RIGHT::res)) k1)
-</span><span>==
-</span><span>    letting
-</span><span>        s2 = (fn res =&gt; s1 (LEFT::res))
-</span><span>        k2 = (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)
-</span><span>
-</span><span>    searchPath p Empty s2 k2
-</span><span>==
-</span><span>    k2 ()
-</span><span>==
-</span><span>    (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1) ()
-</span><span>==
-</span><span>    searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1
-</span><span>==
-</span><span>    k1 ()
-</span><span>==
-</span><span>    (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k) ()
-</span><span>==
-</span><span>    searchPath p R1 (fn res =&gt; s (RIGHT::res)) k
-</span><span>==
-</span><span>    letting
-</span><span>        s3 = (fn res =&gt; s (RIGHT::res))
-</span><span>
-</span><span>    searchPath p (Node(Empty, 3, Empty)) s3 k
-</span><span>==
-</span><span>    if p 3 then s3 [] else
-</span><span>    searchPath p Empty (fn res =&gt; s3 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s3 (RIGHT::res)) k)
-</span><span>==
-</span><span>    if true then s3 [] else
-</span><span>    searchPath p Empty (fn res =&gt; s3 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s3 (RIGHT::res)) k)
-</span><span>==
-</span><span>    s3 []
-</span><span>==
-</span><span>    (fn res =&gt; s (RIGHT::res)) []
-</span><span>==
-</span><span>    s (RIGHT::[])
-</span><span>==
-</span><span>    s [RIGHT]
-</span><span>==
-</span><span>    SOME [RIGHT]
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>datatype direction = LEFT | RIGHT</span></span>
+<span class="giallo-l"><span>(* searchPath : (&#39;a -&gt; bool) -&gt; &#39;a tree -&gt; (direction list -&gt; &#39;b) -&gt; (unit -&gt; &#39;b) -&gt; &#39;b *)</span></span>
+<span class="giallo-l"><span>fun searchPath p Empty s k = k ()</span></span>
+<span class="giallo-l"><span>  | searchPath p (Node(L,x,R)) s k = if p x then s [] else</span></span>
+<span class="giallo-l"><span>          searchPath p L (fn res =&gt; s(LEFT::res)) (fn () =&gt; searchPath p R (fn res =&gt; s(RIGHT::res)) k)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>(*</span></span>
+<span class="giallo-l"><span>    Let T be the following tree</span></span>
+<span class="giallo-l"><span>            1</span></span>
+<span class="giallo-l"><span>        2       3</span></span>
+<span class="giallo-l"><span>*)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>searchPath (fn x =&gt; x = 3) (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty))) SOME (fn () =&gt; NONE)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    letting</span></span>
+<span class="giallo-l"><span>        p = (fn x =&gt; x = 3)</span></span>
+<span class="giallo-l"><span>        T = (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty)))</span></span>
+<span class="giallo-l"><span>        s = SOME</span></span>
+<span class="giallo-l"><span>        k = (fn () =&gt; NONE)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    searchPath p T s k</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    letting</span></span>
+<span class="giallo-l"><span>        from T = (Node(Node(Empty, 2, Empty), 1, Node(Empty, 3, Empty)))</span></span>
+<span class="giallo-l"><span>            L1 = Node(Empty, 2, Empty)</span></span>
+<span class="giallo-l"><span>            x = 1</span></span>
+<span class="giallo-l"><span>            R1 = Node(Empty, 3, Empty)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    if p 1 then s [] else</span></span>
+<span class="giallo-l"><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    if false then s [] else</span></span>
+<span class="giallo-l"><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    searchPath p L1 (fn res =&gt; s (LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    searchPath p (Node(Empty, 2, Empty)) (fn res =&gt; s(LEFT::res)) (fn () =&gt; searchPath p R1 (fn res =&gt; s(RIGHT::res)) k)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    letting</span></span>
+<span class="giallo-l"><span>        s1 = (fn res =&gt; s(LEFT::res))</span></span>
+<span class="giallo-l"><span>        k1 = (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    searchPath p (Node(Empty, 2, Empty)) s1 k1</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    if p 2 then s1 [] else</span></span>
+<span class="giallo-l"><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    if false then s1 [] else</span></span>
+<span class="giallo-l"><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1(RIGHT::res)) k1)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    searchPath p Empty (fn res =&gt; s1 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s1(RIGHT::res)) k1)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    letting</span></span>
+<span class="giallo-l"><span>        s2 = (fn res =&gt; s1 (LEFT::res))</span></span>
+<span class="giallo-l"><span>        k2 = (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1)</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    searchPath p Empty s2 k2</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    k2 ()</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    (fn () =&gt; searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1) ()</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    searchPath p Empty (fn res =&gt; s1 (RIGHT::res)) k1</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    k1 ()</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    (fn () =&gt; searchPath p R1 (fn res =&gt; s (RIGHT::res)) k) ()</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    searchPath p R1 (fn res =&gt; s (RIGHT::res)) k</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    letting</span></span>
+<span class="giallo-l"><span>        s3 = (fn res =&gt; s (RIGHT::res))</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span>    searchPath p (Node(Empty, 3, Empty)) s3 k</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    if p 3 then s3 [] else</span></span>
+<span class="giallo-l"><span>    searchPath p Empty (fn res =&gt; s3 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s3 (RIGHT::res)) k)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    if true then s3 [] else</span></span>
+<span class="giallo-l"><span>    searchPath p Empty (fn res =&gt; s3 (LEFT::res)) (fn () =&gt; searchPath p Empty (fn res =&gt; s3 (RIGHT::res)) k)</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    s3 []</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    (fn res =&gt; s (RIGHT::res)) []</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    s (RIGHT::[])</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    s [RIGHT]</span></span>
+<span class="giallo-l"><span>==</span></span>
+<span class="giallo-l"><span>    SOME [RIGHT]</span></span></code></pre>
 <hr />
 <h3 id="mutual-recursion-in-stream-tabulate">Mutual recursion in Stream.tabulate</h3>
 <p>N.B. I personally have issues with my answer to this question, but it appears to have helped people, so well...</p>
 <p><strong>Original question (edited)</strong></p>
 <p>I’m having a little difficulty reasoning about <code>Stream.tabulate</code></p>
-<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>fun tabulate f = delay (fn () =&gt; tabulate&#39; f)
-</span><span>  and tabulate&#39; f = Cons(f(0), tabulate (fn i =&gt; f(i+1)))
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>fun tabulate f = delay (fn () =&gt; tabulate&#39; f)</span></span>
+<span class="giallo-l"><span>  and tabulate&#39; f = Cons(f(0), tabulate (fn i =&gt; f(i+1)))</span></span></code></pre>
 <p>Why does it feel like it is <code>f(0)</code> <code>f(1)</code> <code>f(1)</code> <code>f(1)</code>... instead of <code>f(0)</code>, <code>f(1)</code>, <code>f(2)</code>, <code>f(3)</code>...? I think I can understand using natural language saying that every time tabulate gets called the <code>i</code> is already increased by one, but I guess I just don’t know how to step through the code?</p>
 <p><strong>Answer (edited)</strong></p>
 <p>Good morning!</p>
@@ -336,8 +331,7 @@
 <p>Now let's think about what you get for the REST of the stream.</p>
 <p>This time, it'll be the result of <code>tabulate (yet another f)</code>, where <code>(yet another f)</code> is some cat that adds one, before passing it to the monkey that adds one.</p>
 <p>You’re wrapping the wrapped function! It might look something like this,</p>
-<pre data-lang="sml" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-sml "><code class="language-sml" data-lang="sml"><span>(fn j =&gt; (fn i =&gt; f (i+1)) (j+1)) (* functions are burritos *)
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>(fn j =&gt; (fn i =&gt; f (i+1)) (j+1)) (* functions are burritos *)</span></span></code></pre>
 <p>(when working recursively, I personally find it helpful to think of functions as creatures doing things instead of just saying function all the time - sorry if it doesn’t help or made it more confusing)</p>
 <p>In particular, two things that I think may be helpful to highlight:</p>
 <p>I think you accept that we can wrap the <code>f</code> function with <code>(fn i =&gt; f (i+1))</code>. Well, nothing is stopping you from wrapping this wrapper function! So it's like <code>(fn j =&gt; (fn i =&gt; f (i+1)) (j+1))</code>.</p>
@@ -347,11 +341,10 @@
 <h3 id="alpha-beta-hack-for-exam-speed">Alpha-Beta hack for exam speed</h3>
 <p><strong>Original 150 alpha-beta table by Jeanne</strong></p>
 <p>150 has an alpha-beta table, courtesy of Jeanne:</p>
-<pre style="background-color:#f5f5f5;color:#1f1f1f;"><code><span>| Player |  v≤α   |  α&lt;v&lt;β   |  v≥β   |
-</span><span>|-------------------------------------|
-</span><span>| Minnie | Prune  | Update β | Ignore |
-</span><span>| Maxie  | Ignore | Update α | Prune  |
-</span></code></pre>
+<pre class="giallo" style="color: #24292E; background-color: #FFFFFF;"><code data-lang="plain"><span class="giallo-l"><span>| Player |  v≤α   |  α&lt;v&lt;β   |  v≥β   |</span></span>
+<span class="giallo-l"><span>|-------------------------------------|</span></span>
+<span class="giallo-l"><span>| Minnie | Prune  | Update β | Ignore |</span></span>
+<span class="giallo-l"><span>| Maxie  | Ignore | Update α | Prune  |</span></span></code></pre>
 <p><strong>The hack</strong></p>
 <p>For conceptual understanding, you should rely on the table. But in exam conditions, these two rules produce the same results faster:</p>
 <ul>
